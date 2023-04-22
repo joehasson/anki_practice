@@ -31,18 +31,22 @@ class D(B, A):
         print("D.f")
         super().f()
 
+c = C()
+c.f()
+d = D()
+d.f()
 
 def test_my_super(capsys) -> None:
     c = C()
     c.f()
 
     captured = capsys.readouterr()
-    assert captured.out == "C.f\nA.f\nB.f\nRoot.f"
+    assert captured.out == "C.f\nA.f\nB.f\nRoot.f\n"
 
 def test_my_super2(capsys) -> None:
     d = D()
     d.f()
 
     captured = capsys.readouterr()
-    assert captured.out == "D.f\nB.f\nA.f\nRoot.f"
+    assert captured.out == "D.f\nB.f\nA.f\nRoot.f\n"
 
