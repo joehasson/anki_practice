@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include "unity.h"
 
-int bitcount (unsigned x){
-}
+int bitcount (unsigned x);
 
 /* Test cases */
 
@@ -20,9 +19,15 @@ void test_bitcount_3831 (void) {
     TEST_ASSERT_EQUAL(10, bitcount(3831U));
 }
 
+/* 0xEA34 = 1110 1010 0011 0100 so bitcount is 8 */
+void test_bitcount_0xEA34 (void) {
+    TEST_ASSERT_EQUAL(8, bitcount(0xEA34U));
+}
+
 int main (void) {
     UNITY_BEGIN();
     RUN_TEST(test_bitcount_152);
     RUN_TEST(test_bitcount_3831);
+    RUN_TEST(test_bitcount_0xEA34);
     return UNITY_END();
 }
