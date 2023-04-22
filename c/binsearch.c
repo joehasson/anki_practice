@@ -1,6 +1,32 @@
 #include <stdio.h>
 #include "unity.h"
 
+/* Implementation */
+/* find x in sorted array v[0], v[1], ... , v[n-1]
+ * else return -1
+ *
+ * Make only one check inside the loop
+ */
+int binsearch (int x, int *v, int n){
+    int low, mid, high;
+    low = 0;
+    high = n -1;
+
+    while (low <= high){
+        mid = (low + high) / 2;
+        if (v[mid] < x)
+            low = mid + 1;
+        else
+            high = mid - 1;
+    }
+
+    if (v[low] == x)
+        return low;
+    else if(v[high] == x)
+        return high;
+    else
+        return -1;
+}
 
 /* Test Cases */
 
