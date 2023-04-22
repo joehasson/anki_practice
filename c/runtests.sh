@@ -12,6 +12,13 @@ executable_name=${1%.c}
 # Compile the test file and the unity test framework
 gcc -o $executable_name $1 unity.c
 
+compilation_exit_code=$?
+
+if [ $compilation_exit_code -ne 0 ]; then
+    echo "$1 failed to compile: runtests.sh ending"
+    exit $compilation_exit_code
+fi
+
 # Run the executable and save the exit code
 ./$executable_name
 exit_code=$?
