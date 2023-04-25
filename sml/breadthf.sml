@@ -6,6 +6,12 @@ fun (x mem []) = false
   | (x mem (y::ys)) = x=y orelse x mem ys
 
 
+fun breadthf (start, graph) = 
+  let fun aux ([], visited, acc) = acc
+        | aux (x::queue, visited, acc) =
+            if x mem visited then aux (queue, visited, acc)
+            else aux (queue @ nexts(x, graph), x::visited, x::acc)
+  in List.rev (aux ([start], [], [])) end
 
 val graph1 = [("a","b"), ("a","c"), ("a","d"),
               ("b","e"), ("c","f"), ("d","e"),
