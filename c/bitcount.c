@@ -3,6 +3,16 @@
 
 int bitcount (unsigned x);
 
+int bitcount (unsigned x){
+    int c = 0;
+    do {
+        c += x & 1;
+    } while (x >>= 1);
+
+    return c;
+}
+
+
 /* Test cases */
 
 void setUp (void) {}
