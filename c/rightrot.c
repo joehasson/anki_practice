@@ -2,6 +2,13 @@
 
 unsigned rightrot(unsigned x);
 
+unsigned rightrot(unsigned x){
+    unsigned lsb = x & 1;
+    x >>= 1;
+    x |= (lsb << ((sizeof(x) * 8) - 1));
+    return x;
+}
+
 /*test cases*/
 
 /*We need these functions to make unity work, even
