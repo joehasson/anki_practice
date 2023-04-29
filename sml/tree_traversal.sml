@@ -1,5 +1,10 @@
 datatype 'a tree = Lf | Br of 'a * 'a tree * 'a tree
 
+fun preorder t =
+  let 
+    fun aux (Br (x, t1, t2), acc) = aux (t2, aux (t1, x::acc))
+      | aux (Lf, acc) = acc 
+  in List.rev (aux (t, [])) end
 
 val birnam = Br ("The", Br ("wood", Lf, 
                                    Br ("of", Br ("Birnam", Lf, Lf), 
