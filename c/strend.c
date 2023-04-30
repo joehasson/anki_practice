@@ -4,17 +4,17 @@
 
 /* strend: return 1 if the string t occurs at the end of the string s, 
  * and zero otherwise */
-int strend(char *s, char *t){
-    int i;
 
+int strend (char *s, char *t){
     if (strlen(s) < strlen(t))
         return 0;
 
     s += strlen(s) - strlen(t);
-
-    while (*s)
+    while (*s){
         if (*s++ != *t++)
             return 0;
+    }
+
     return 1;
 }
 
