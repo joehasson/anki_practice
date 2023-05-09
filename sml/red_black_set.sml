@@ -3,10 +3,6 @@ signature MEM = sig
   val compare: t * t -> order
 end
 
-structure IntMem : MEM = struct
-  type t = int
-  val compare = Int.compare
-end
 
 signature SET = sig
   type mem
@@ -16,7 +12,9 @@ signature SET = sig
   val mem: mem * t -> bool
   val insert: mem * t -> t
   val from_list: mem list -> t
+  val tabulate: (int -> mem) -> int -> t
 end
+
 
 functor NaiveSet (Mem: MEM) : SET = struct
   type mem = Mem.t
@@ -42,6 +40,14 @@ functor NaiveSet (Mem: MEM) : SET = struct
            | LESS => Br (y,insert(x,t1),t2)
 
   val from_list = List.foldl insert empty
+
+  fun tabulate f n = 
+    let fun aux (i, acc) = 
+      if i=n then acc else aux(i+1, insert(f i, acc))
+    in 
+      aux (0, empty) 
+    end
+
 end
 
 functor RedBlackSet (Mem: MEM) : SET = struct
@@ -83,29 +89,145 @@ functor RedBlackSet (Mem: MEM) : SET = struct
          Lf => raise Impossible
        | Br (_,x,t1,t2) => Br(Black,x,t1,t2)
 
+  fun tabulate f n = 
+    let fun aux (i, acc) = 
+      if i=n then acc else aux(i+1, insert(f i, acc))
+    in 
+      aux (0, empty) 
+    end
+
   val from_list = List.foldl insert empty
 end
 
-structure RedBlackTestSet = RedBlackSet(IntMem)
-structure NaiveTestSet = NaiveSet(IntMem) 
 
 (* Testing results *)
-
-(* Make an ordered list n,n-1,...,0 *)
-fun makelist 0 = []
-  | makelist n = n :: makelist (n-1)
-
-(* Make a random list of n ints between 1 and 100*)
-fun randoms n =
-  let
-    val seed = Random.rand(123,456)
-    val nextInt = Random.randRange(1,n) 
-  in 
-    List.tabulate(n, fn i => nextInt seed)
-  end
+signature SET_TESTS = sig
+  (* Print average time to look up an element *)
+  val random_lookup_time: int -> unit  
+  (* Print average time to look up an element among ordered elements*)
+  val ordered_lookup_time: int -> unit 
+end 
 
 
-(* Benchmarking random elements *)
-val ordered_list = makelist 1000000
-val random_list = randoms 1000000
+signature TESTABLE_SET = sig 
+  include SET
+  val random_set_maker: int ->  t
+  val ordered_set_maker: int -> t
+  val dummy_element: unit -> mem
+end
 
+
+functor Test (Set: TESTABLE_SET) :> SET_TESTS = struct
+  fun calc_time prefix make_set n = 
+    let
+      val i = ref 0
+      val seconds = ref 0.0
+      val test_runs = 2
+      val time_to_real = ((Real.fromLarge IEEEReal.TO_NEAREST) o Time.toReal)
+    in 
+      while !i < test_runs do (* Average over runs *)
+        let 
+          val timer = Timer.startRealTimer ()
+          val test_set = make_set n
+          val build_time = (time_to_real o Timer.checkRealTimer) timer
+        in 
+          seconds := !seconds + build_time
+          ; i := !i + 1
+        end
+      ; print (prefix ^ Real.toString (!seconds / (Real.fromInt test_runs)) ^ "s" ^ "\n")
+    end
+
+  fun random_lookup_time n = 
+    let val prefix = "Building set of " ^ Int.toString n ^ " random elements takes: "
+    in calc_time prefix Set.random_set_maker n end
+
+  fun ordered_lookup_time n = 
+    let val prefix = "Building set of " ^ Int.toString n ^ " ordered elements takes: "
+    in calc_time prefix Set.ordered_set_maker n end
+end
+
+
+structure IntMem : MEM = struct
+  type t = int
+  val compare = Int.compare
+end
+
+signature TEST_UTILS = sig
+  val foo: int
+end
+
+(* I wonder how one could remove the code duplication here?
+*  Higher order functors aren't a thing, I think. *)
+structure NaiveTestableSet :> TESTABLE_SET = struct
+  structure Set = NaiveSet(IntMem)
+  open Set
+
+  val dummy_element = 
+    let
+      val seed = Random.rand(798,435)
+      val nextInt = Random.randRange(1,100000) 
+    in
+      fn () => nextInt seed
+    end
+
+  val ordered_set_maker = tabulate (fn n => n)
+
+  val random_set_maker = 
+    let
+      val seed = Random.rand(132,546)
+      val nextInt = Random.randRange(1,100000) 
+    in
+      tabulate (fn i => nextInt seed)
+    end
+end
+
+
+structure RedBlackTestableSet :> TESTABLE_SET = struct
+  structure Set = RedBlackSet(IntMem)
+  open Set
+
+  val dummy_element = 
+    let
+      val seed = Random.rand(798,435)
+      val nextInt = Random.randRange(1,100000) 
+    in
+      fn () => nextInt seed
+    end
+
+  val ordered_set_maker = tabulate (fn n => n)
+
+  val random_set_maker = 
+    let
+      val seed = Random.rand(132,546)
+      val nextInt = Random.randRange(1,100000) 
+    in
+      tabulate (fn i => nextInt seed)
+    end
+end
+
+
+structure RedBlackTests = Test(RedBlackTestableSet)
+structure NaiveTests = Test(NaiveTestableSet)
+
+(* Actually run the tests *)
+
+fun runtests testf = 
+  (
+  testf 1000 (* Thousand *)
+  ; testf 10000 (* Ten thousand *)
+  ; testf 20000 (* Twenty thousand *)
+  )
+
+val _ = (
+  print "Running Red Black Set benchmarks\n"
+  ; runtests RedBlackTests.random_lookup_time
+  ; runtests RedBlackTests.ordered_lookup_time
+  ; print "\n\n"
+  )
+
+val _ = (
+  print "Running Naive Set benchmarks\n"
+  ; runtests NaiveTests.random_lookup_time
+  ; runtests NaiveTests.ordered_lookup_time
+  ; print "\n\n"
+  )
