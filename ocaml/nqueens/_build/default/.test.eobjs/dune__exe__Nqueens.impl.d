@@ -1,1 +1,0 @@
-nqueens.ml: Int List

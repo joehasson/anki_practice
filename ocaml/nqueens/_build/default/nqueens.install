@@ -1,5 +1,0 @@
-lib: [
-  "_build/install/default/lib/nqueens/META"
-  "_build/install/default/lib/nqueens/dune-package"
-  "_build/install/default/lib/nqueens/opam"
-]
