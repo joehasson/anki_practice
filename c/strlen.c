@@ -3,19 +3,20 @@
 
 int my_strlen(char s[]);
 
-int my_strlen(char s[]){
-    int c = 0;
-
-    while (*s++)
-        c++;
-
-    return c;
+int my_strlen(char *s){
+	int i = 0;
+	while (s[i]) i++;
+	return i;
 }
-
 // Test cases
 
 void setUp(void){}
 void tearDown(void){}
+
+void test0(void){
+    char foo[] = "";
+    TEST_ASSERT_EQUAL(0, my_strlen(foo));
+}
 
 void test1(void){
     char foo[] = "abc";
@@ -34,6 +35,7 @@ void test3(void){
 
 int main (void) {
     UNITY_BEGIN();
+    RUN_TEST(test0);
     RUN_TEST(test1);
     RUN_TEST(test2);
     RUN_TEST(test3);
