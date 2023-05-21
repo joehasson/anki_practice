@@ -68,11 +68,11 @@ functor RedBlackSet (Mem: MEM) : SET = struct
            | _     => mem(x,t1) orelse mem(x,t2)
 
   fun balance (
-    Br (Black, x, Br(Red, y, Br(Red, z, t1, t2), t3), t4)
-  | Br (Black, x, Br(Red, z, t1, Br(Red, y, t2, t3)), t4)
-  | Br (Black, x, t1, Br(Red, z, Br(Red, y, t2, t3), t4))
-  | Br (Black, x, t1, Br(Red, y, t2, Br(Red, z, t3, t4)))
-  ) = Br (Red, y, Br(Black, x, t1, t2), Br(Black, z, t3, t4))
+    Br (Black, z, Br (Red, y, Br (Red, x, t1, t2), t3), t4)
+  | Br (Black, z, Br (Red, x, t1, Br (Red, y, t2, t3)), t4)
+  | Br (Black, x, t1, Br (Red, z, Br (Red, y, t2, t3), t4))
+  | Br (Black, x, t1, Br (Red, y, t2, Br (Red, z, t3, t4)))
+  ) = Br (Red, y, Br (Black, x, t1, t2), Br (Black, z, t1, t2))
     | balance t = t
 
   fun insert_aux (x, Lf) = Br (Red, x, Lf, Lf)
