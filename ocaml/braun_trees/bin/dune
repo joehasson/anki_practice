@@ -1,0 +1,4 @@
+(executable
+ (public_name braun_trees)
+ (name main)
+ (libraries braun_trees))
