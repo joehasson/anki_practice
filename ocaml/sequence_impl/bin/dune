@@ -1,0 +1,4 @@
+(executable
+ (public_name sequence_impl)
+ (name main)
+ (libraries sequence_impl))
