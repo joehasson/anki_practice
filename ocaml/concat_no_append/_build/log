@@ -1,0 +1,5 @@
+# dune init project concat_no_append
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/joe/anki_practice/ocaml/concat_no_append
+# Auto-detected concurrency: 2

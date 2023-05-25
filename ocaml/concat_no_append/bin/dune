@@ -1,0 +1,4 @@
+(executable
+ (public_name concat_no_append)
+ (name main)
+ (libraries concat_no_append))

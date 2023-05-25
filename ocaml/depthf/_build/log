@@ -1,0 +1,5 @@
+# dune init project depthf
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/joe/anki_practice/ocaml/depthf
+# Auto-detected concurrency: 2

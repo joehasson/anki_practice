@@ -1,0 +1,4 @@
+(executable
+ (public_name depthf)
+ (name main)
+ (libraries depthf))
