@@ -1,0 +1,5 @@
+# dune init project fizzbuzz
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/joe/anki_practice/ocaml/fizzbuzz
+# Auto-detected concurrency: 2
