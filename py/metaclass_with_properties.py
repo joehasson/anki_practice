@@ -1,22 +1,17 @@
-class BaseMeta(type):
-    def __new__(cls, name: str, bases, body):
+from typing import Type
+from typing_extensions import Self
+
+class DefinesFoo(type):
+    def __new__(cls: Type[Self], name: str, bases: tuple[type], body: dict):
         assert name == name.lower()
-        assert "foo" in body or any("foo" in base.__dict__ for base in bases)
+        assert ("foo" in body) or any(any(hasattr(k, "foo") for k in base.__mro__) for base in bases)
         return super().__new__(cls, name, bases, body)
 
 
-class base(metaclass=BaseMeta):
+class baz(metaclass=DefinesFoo):
     def foo(self):
-        return self.bar()
+        return True
 
-
-class derived(base):
-    def bar(self):
-        return 4
-
-base()
-derived()
-
-# Metaclasses are classes which inherit from type and allow 
-# you to intercept the creation of new types.
+class bax(baz):
+    pass
 
