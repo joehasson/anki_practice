@@ -1,39 +1,41 @@
 type 'a seq = Nil | Cons of 'a * (unit -> 'a seq)
 
-
-let rec seq_filter f sq = match sq with
-    | Nil -> Nil
-    | Cons (x, xf) -> if f x 
-                      then Cons (x, fun () -> seq_filter f (xf ()))
-                      else seq_filter f (xf ())
-    
-
 let dfs nexts init =
-    let rec stack_maintainer = function
+    let rec aux = function
         | [] -> Nil
-        | (x::stack) -> Cons (x, fun () -> stack_maintainer (nexts x @ stack))
-    in stack_maintainer [init]
+        | x::stack -> Cons (x, fun () -> aux (nexts x @ stack))
+    in aux [init]
 
+let rec seq_filter f = function
+    | Nil -> Nil
+    | Cons (a, fsq) -> 
+            let sq = fsq () in 
+            if f a 
+            then Cons (a, fun () -> seq_filter f sq) 
+            else seq_filter f sq
 
-let nexts dim oldqs =
-    let newqs = List.init dim (fun i -> (i+1)::oldqs) in
-    let 
-        no_diags q board = 
-            let rec iterfunc i = function
-                | [] -> true
-                | (q'::qs) -> Int.abs(q-q') <> i && iterfunc (i+1) qs
-            in iterfunc 1 board
+let rec seq_len = function
+    | Nil -> 0
+    | Cons (_, fsq) -> 1 + seq_len (fsq())
+
+let nqueen_solutions n = 
+    let next_queens board =
+        let is_safe new_q = 
+            let no_diags new_q =
+                let rec aux i qs = 
+                    match qs with
+                    | [] -> true
+                    | q::qs' -> (Int.abs(new_q - q) <> i) && aux (i+1) qs'
+                in aux 1 board
+            in
+            no_diags new_q && not (List.mem new_q board)
+        in
+        let safe_qs = List.filter is_safe (List.init n (fun n -> n + 1)) in 
+        List.map (fun q -> q :: board) safe_qs 
     in
-    let 
-        (* Check whether q has been placed safely in qs given qs is safe *)
-        safeqs = function 
-            | [] -> failwith "impossible" 
-            | (q::qs) -> not (List.mem q qs) && no_diags q qs
-    in
-        List.filter safeqs newqs
+    seq_filter (fun qs -> List.length qs = n) (dfs next_queens [])
 
-
-let nqueens dim = 
-    let is_full_board = fun l -> List.length l == dim in
-    seq_filter is_full_board (dfs (nexts dim) [])
+let sol8 = seq_len(nqueen_solutions 8)
+let sol3 = seq_len(nqueen_solutions 4)
+let sol3 = seq_len(nqueen_solutions 3)
 
