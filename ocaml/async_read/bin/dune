@@ -1,0 +1,4 @@
+(executable
+ (public_name async_read)
+ (name main)
+ (libraries async_read))
