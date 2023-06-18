@@ -1,0 +1,5 @@
+# dune init proj simple_state_machine
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/joe/anki_practice/ocaml/simple_state_machine
+# Auto-detected concurrency: 2
