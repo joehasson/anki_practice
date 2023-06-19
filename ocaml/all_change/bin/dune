@@ -1,0 +1,4 @@
+(executable
+ (public_name all_change)
+ (name main)
+ (libraries all_change))
