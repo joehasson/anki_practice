@@ -14,10 +14,6 @@ let rec seq_filter f = function
             then Cons (a, fun () -> seq_filter f sq) 
             else seq_filter f sq
 
-let rec seq_len = function
-    | Nil -> 0
-    | Cons (_, fsq) -> 1 + seq_len (fsq())
-
 let nqueen_solutions n = 
     let next_queens board =
         let is_safe new_q = 
@@ -34,6 +30,12 @@ let nqueen_solutions n =
         List.map (fun q -> q :: board) safe_qs 
     in
     seq_filter (fun qs -> List.length qs = n) (dfs next_queens [])
+
+(* Test cases *)
+
+let rec seq_len = function
+    | Nil -> 0
+    | Cons (_, fsq) -> 1 + seq_len (fsq())
 
 let sol8 = seq_len(nqueen_solutions 8)
 let sol3 = seq_len(nqueen_solutions 4)
