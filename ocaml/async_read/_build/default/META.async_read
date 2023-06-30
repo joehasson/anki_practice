@@ -1,6 +1,0 @@
-description = ""
-requires = "lwt lwt.unix"
-archive(byte) = "async_read.cma"
-archive(native) = "async_read.cmxa"
-plugin(byte) = "async_read.cma"
-plugin(native) = "async_read.cmxs"
