@@ -1,0 +1,4 @@
+(executable
+ (public_name red_black_set)
+ (name main)
+ (libraries red_black_set))
