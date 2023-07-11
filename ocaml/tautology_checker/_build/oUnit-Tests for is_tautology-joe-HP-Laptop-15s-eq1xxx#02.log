@@ -1,0 +1,6 @@
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: Start test Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: Test Tests for is_tautology:1:p2 Conj elim 1 is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: End test Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: Start test Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: Test Tests for is_tautology:5:n2: Affirming the consequent is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: End test Tests for is_tautology:5:n2: Affirming the consequent.

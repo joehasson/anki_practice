@@ -1,0 +1,15 @@
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test Tests for is_tautology:0:p1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test Tests for is_tautology:0:p1 is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test Tests for is_tautology:0:p1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test Tests for is_tautology:2:p2: Conj elim 2.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test Tests for is_tautology:2:p2: Conj elim 2 is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test Tests for is_tautology:2:p2: Conj elim 2.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test Tests for is_tautology:3:p3: Reductio.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test Tests for is_tautology:3:p3: Reductio is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test Tests for is_tautology:3:p3: Reductio.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test Tests for is_tautology:4:n1: An atom.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test Tests for is_tautology:4:n1: An atom is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test Tests for is_tautology:4:n1: An atom.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test Tests for is_tautology:6:n3: Denying the antecedent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test Tests for is_tautology:6:n3: Denying the antecedent is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test Tests for is_tautology:6:n3: Denying the antecedent.

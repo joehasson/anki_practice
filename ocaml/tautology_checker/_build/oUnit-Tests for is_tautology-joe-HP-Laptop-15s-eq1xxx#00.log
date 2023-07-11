@@ -1,0 +1,106 @@
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Runner: processes
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Chooser: simple
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration suite_name = "Tests for is_tautology"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration cache_filename = "/home/joe/anki_practice/ocaml/tautology_checker/_build/oUnit-$(suite_name).cache"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration run_gc_full_major = "true"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration display = "true"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration results_style_1_X = "false"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration testdata_dir = "none"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration health_check_interval = "1."
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration verbose = "false"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration chooser = "simple"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration output_html_dir = "none"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration processes_kill_period = "5."
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration runner = "processes"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration shards = "2"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration processes_grace_period = "5."
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration log_encoding = "utf-8"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration output_junit_file = "none"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration ci = "false"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Configuration output_file = "/home/joe/anki_practice/ocaml/tautology_checker/_build/oUnit-$(suite_name)-$(shard_id).log"
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Using 2 workers maximum.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Starting worker number joe-HP-Laptop-15s-eq1xxx#01.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Worker joe-HP-Laptop-15s-eq1xxx#01 started.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Starting worker number joe-HP-Laptop-15s-eq1xxx#02.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Worker joe-HP-Laptop-15s-eq1xxx#02 started.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:1:p2 Conj elim 1, Tests for is_tautology:0:p1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test Tests for is_tautology:0:p1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:1:p2 Conj elim 1, Tests for is_tautology:0:p1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: Start test Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:1:p2 Conj elim 1, Tests for is_tautology:0:p1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test Tests for is_tautology:0:p1 is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:1:p2 Conj elim 1, Tests for is_tautology:0:p1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test Tests for is_tautology:0:p1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:1:p2 Conj elim 1, Tests for is_tautology:0:p1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:2:p2: Conj elim 2, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test Tests for is_tautology:2:p2: Conj elim 2.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:2:p2: Conj elim 2, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test Tests for is_tautology:2:p2: Conj elim 2 is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:2:p2: Conj elim 2, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test Tests for is_tautology:2:p2: Conj elim 2.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:2:p2: Conj elim 2, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:3:p3: Reductio, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test Tests for is_tautology:3:p3: Reductio.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:3:p3: Reductio, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: Test Tests for is_tautology:1:p2 Conj elim 1 is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:3:p3: Reductio, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test Tests for is_tautology:3:p3: Reductio is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:3:p3: Reductio, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test Tests for is_tautology:3:p3: Reductio.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:3:p3: Reductio, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:4:n1: An atom, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test Tests for is_tautology:4:n1: An atom.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:4:n1: An atom, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: End test Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:4:n1: An atom, Tests for is_tautology:1:p2 Conj elim 1.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:5:n2: Affirming the consequent, Tests for is_tautology:4:n1: An atom.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: Start test Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:5:n2: Affirming the consequent, Tests for is_tautology:4:n1: An atom.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test Tests for is_tautology:4:n1: An atom is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:5:n2: Affirming the consequent, Tests for is_tautology:4:n1: An atom.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test Tests for is_tautology:4:n1: An atom.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:5:n2: Affirming the consequent, Tests for is_tautology:4:n1: An atom.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Still 2 tests running : Tests for is_tautology:6:n3: Denying the antecedent, Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:6:n3: Denying the antecedent, Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test Tests for is_tautology:6:n3: Denying the antecedent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Still 2 tests running : Tests for is_tautology:6:n3: Denying the antecedent, Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:6:n3: Denying the antecedent, Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: Test Tests for is_tautology:5:n2: Affirming the consequent is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Still 2 tests running : Tests for is_tautology:6:n3: Denying the antecedent, Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:6:n3: Denying the antecedent, Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#02 I: End test Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Still 2 tests running : Tests for is_tautology:6:n3: Denying the antecedent, Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 2 tests running: Tests for is_tautology:6:n3: Denying the antecedent, Tests for is_tautology:5:n2: Affirming the consequent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Still 1 tests running : Tests for is_tautology:6:n3: Denying the antecedent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 1 tests running: Tests for is_tautology:6:n3: Denying the antecedent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test Tests for is_tautology:6:n3: Denying the antecedent is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Still 1 tests running : Tests for is_tautology:6:n3: Denying the antecedent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 1 tests running: Tests for is_tautology:6:n3: Denying the antecedent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test Tests for is_tautology:6:n3: Denying the antecedent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Still 1 tests running : Tests for is_tautology:6:n3: Denying the antecedent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 1 tests running: Tests for is_tautology:6:n3: Denying the antecedent.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: 0 tests running: .
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Worker joe-HP-Laptop-15s-eq1xxx#02 has ended.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Worker joe-HP-Laptop-15s-eq1xxx#01 died unexpectedly.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Used 2 worker during test execution.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Run 5 tests with shard joe-HP-Laptop-15s-eq1xxx#01.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Run 2 tests with shard joe-HP-Laptop-15s-eq1xxx#02.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Check health of shard joe-HP-Laptop-15s-eq1xxx#01, 2 times.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Check health of shard joe-HP-Laptop-15s-eq1xxx#02, 4 times.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: ==============
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Summary:
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Test Tests for is_tautology:6:n3: Denying the antecedent is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Test Tests for is_tautology:5:n2: Affirming the consequent is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Test Tests for is_tautology:4:n1: An atom is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Test Tests for is_tautology:1:p2 Conj elim 1 is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Test Tests for is_tautology:3:p3: Reductio is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Test Tests for is_tautology:2:p2: Conj elim 2 is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Test Tests for is_tautology:0:p1 is successful.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Ran: 7 tests in: 0.11 seconds.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Cases: 7.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Tried: 7.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Errors: 0.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Failures: 0.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Skip: 0.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Todo: 0.
+2023-07-11T07:46:28+00:00 joe-HP-Laptop-15s-eq1xxx#00 I: Timeout: 0.
