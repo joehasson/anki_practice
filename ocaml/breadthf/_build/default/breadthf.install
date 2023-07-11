@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/breadthf/META"
+  "_build/install/default/lib/breadthf/dune-package"
+  "_build/install/default/lib/breadthf/opam"
+]
+bin: [
+  "_build/install/default/bin/breadthf"
+]
