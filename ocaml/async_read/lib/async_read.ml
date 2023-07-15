@@ -1,9 +1,7 @@
-let file =
-    Lwt_io.open_file ~mode:Input "foo"
+let (>>= ) = Lwt.( >>= )
 
 let rec loop () =
-    let open Lwt in
-    file >>= fun c -> 
-    Lwt_io.read_line c >>= fun s ->
-    ignore (Lwt_io.printl s); loop ()
+    Lwt_io.open_file ~mode:Lwt_io.input "log" >>= fun ch ->
+    Lwt_io.read_line ch >>= fun s ->
+    Lwt_io.printl s >>= fun () -> loop ()
 
