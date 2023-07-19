@@ -1,7 +1,7 @@
 include Interf
 
 (*First Idea: exploit evaluation order*)
-module Impl1 = struct
+module Impl1 : Traversals = struct
   let preorder t =
       let rec aux t acc = match t with
         | Lf -> acc
@@ -22,7 +22,7 @@ module Impl1 = struct
 end
 
 (*Second idea: be clever about evaluation order *)
-module Impl2 = struct
+module Impl2 : Traversals= struct
   let preorder t =
       let rec aux t acc = match t with
         | Lf -> acc
