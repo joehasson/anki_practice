@@ -1,0 +1,4 @@
+(executable
+ (public_name tree_traversal)
+ (name main)
+ (libraries tree_traversal))
