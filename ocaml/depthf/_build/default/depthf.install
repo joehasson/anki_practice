@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/depthf/META"
+  "_build/install/default/lib/depthf/dune-package"
+  "_build/install/default/lib/depthf/opam"
+]
+bin: [
+  "_build/install/default/bin/depthf"
+]
