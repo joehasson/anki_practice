@@ -1,2 +1,3 @@
 (test
- (name braun_trees))
+ (name test)
+ (libraries braun_trees ounit2))
