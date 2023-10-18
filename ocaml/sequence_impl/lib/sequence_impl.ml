@@ -16,3 +16,6 @@ module type SEQUENCE = sig
     val iterates : ('a -> 'a) -> 'a -> 'a seq
     val from: int -> int seq
 end
+
+module Sequence = struct
+end
