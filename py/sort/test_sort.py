@@ -5,6 +5,7 @@ from enum import Enum
 
 import bottom_up_mergesort
 import heap_sort
+import heap_sort_builtins
 import insertion_sort
 import quicksort
 import selection_sort
@@ -15,12 +16,13 @@ class SortType(Enum):
     PURE = 1
 
 params = (
-    #pytest.param(bottom_up_mergesort.sort, SortType.PURE, id="Bottom up mergesort"),
+    pytest.param(bottom_up_mergesort.sort, SortType.PURE, id="Bottom up mergesort"),
     pytest.param(heap_sort.sort, SortType.IN_PLACE, id="Heap sort"),
+    pytest.param(heap_sort_builtins.sort, SortType.PURE, id="Heap sort builtins"),
     pytest.param(insertion_sort.sort, SortType.IN_PLACE, id="Insertion sort"),
     pytest.param(quicksort.sort, SortType.IN_PLACE, id="Quicksort"),
     pytest.param(selection_sort.sort, SortType.IN_PLACE, id="Selection sort"),
-    #pytest.param(top_down_mergesort.sort, SortType.PURE, id="Top down mergesort"),
+    pytest.param(top_down_mergesort.sort, SortType.PURE, id="Top down mergesort"),
 )
 
 @pytest.mark.parametrize(
