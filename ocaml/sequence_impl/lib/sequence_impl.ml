@@ -17,5 +17,5 @@ module type SEQUENCE = sig
     val from: int -> int seq
 end
 
-module Sequence = struct
+module Sequence : SEQUENCE = struct
 end
