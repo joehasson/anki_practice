@@ -1,0 +1,6 @@
+2023-08-05T09:52:29+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test test_suite:0:Empty.
+2023-08-05T09:52:29+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test test_suite:0:Empty is successful.
+2023-08-05T09:52:29+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test test_suite:0:Empty.
+2023-08-05T09:52:29+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Start test test_suite:2:Even number.
+2023-08-05T09:52:29+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: Test test_suite:2:Even number is successful.
+2023-08-05T09:52:29+00:00 joe-HP-Laptop-15s-eq1xxx#01 I: End test test_suite:2:Even number.

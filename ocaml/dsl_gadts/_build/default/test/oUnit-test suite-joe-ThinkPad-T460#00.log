@@ -1,0 +1,96 @@
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Runner: processes
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Chooser: simple
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration suite_name = "test suite"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration cache_filename = "/home/joe/anki_practice/ocaml/dsl_gadts/_build/default/test/oUnit-$(suite_name).cache"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration run_gc_full_major = "true"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration display = "true"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration results_style_1_X = "false"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration testdata_dir = "none"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration health_check_interval = "1."
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration verbose = "false"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration chooser = "simple"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration output_html_dir = "none"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration processes_kill_period = "5."
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration runner = "processes"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration shards = "2"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration processes_grace_period = "5."
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration log_encoding = "utf-8"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration output_junit_file = "none"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration ci = "false"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Configuration output_file = "/home/joe/anki_practice/ocaml/dsl_gadts/_build/default/test/oUnit-$(suite_name)-$(shard_id).log"
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Using 2 workers maximum.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Starting worker number joe-ThinkPad-T460#01.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#01 started.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Starting worker number joe-ThinkPad-T460#02.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#02 started.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:0:eval of values:1:bool, test suite:0:eval of values:0:int.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Start test test suite:0:eval of values:0:int.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:0:eval of values:1:bool, test suite:0:eval of values:0:int.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#02 I: Start test test suite:0:eval of values:1:bool.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:0:eval of values:1:bool, test suite:0:eval of values:0:int.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Test test suite:0:eval of values:0:int is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:0:eval of values:1:bool, test suite:0:eval of values:0:int.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: End test test suite:0:eval of values:0:int.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:0:eval of values:1:bool, test suite:0:eval of values:0:int.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:1:plus expressions:0:10 + 20 = 30, test suite:0:eval of values:1:bool.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Start test test suite:1:plus expressions:0:10 + 20 = 30.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:1:plus expressions:0:10 + 20 = 30, test suite:0:eval of values:1:bool.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Test test suite:1:plus expressions:0:10 + 20 = 30 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:1:plus expressions:0:10 + 20 = 30, test suite:0:eval of values:1:bool.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: End test test suite:1:plus expressions:0:10 + 20 = 30.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:1:plus expressions:0:10 + 20 = 30, test suite:0:eval of values:1:bool.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#02 I: Test test suite:0:eval of values:1:bool is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:1:plus expressions:1:10 + 20 + 1 = 31, test suite:0:eval of values:1:bool.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#02 I: End test test suite:0:eval of values:1:bool.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Start test test suite:1:plus expressions:1:10 + 20 + 1 = 31.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:1:plus expressions:1:10 + 20 + 1 = 31, test suite:0:eval of values:1:bool.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:2:if expressions:0:if true then 10 else 20 = 10, test suite:1:plus expressions:1:10 + 20 + 1 = 31.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#02 I: Start test test suite:2:if expressions:0:if true then 10 else 20 = 10.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:2:if expressions:0:if true then 10 else 20 = 10, test suite:1:plus expressions:1:10 + 20 + 1 = 31.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Test test suite:1:plus expressions:1:10 + 20 + 1 = 31 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:2:if expressions:0:if true then 10 else 20 = 10, test suite:1:plus expressions:1:10 + 20 + 1 = 31.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: End test test suite:1:plus expressions:1:10 + 20 + 1 = 31.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:2:if expressions:0:if true then 10 else 20 = 10, test suite:1:plus expressions:1:10 + 20 + 1 = 31.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : test suite:2:if expressions:1:if false then 10 else 20 = 20, test suite:2:if expressions:0:if true then 10 else 20 = 10.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:2:if expressions:1:if false then 10 else 20 = 20, test suite:2:if expressions:0:if true then 10 else 20 = 10.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Start test test suite:2:if expressions:1:if false then 10 else 20 = 20.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : test suite:2:if expressions:1:if false then 10 else 20 = 20, test suite:2:if expressions:0:if true then 10 else 20 = 10.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:2:if expressions:1:if false then 10 else 20 = 20, test suite:2:if expressions:0:if true then 10 else 20 = 10.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#02 I: Test test suite:2:if expressions:0:if true then 10 else 20 = 10 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : test suite:2:if expressions:1:if false then 10 else 20 = 20, test suite:2:if expressions:0:if true then 10 else 20 = 10.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:2:if expressions:1:if false then 10 else 20 = 20, test suite:2:if expressions:0:if true then 10 else 20 = 10.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#02 I: End test test suite:2:if expressions:0:if true then 10 else 20 = 10.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : test suite:2:if expressions:1:if false then 10 else 20 = 20, test suite:2:if expressions:0:if true then 10 else 20 = 10.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 2 tests running: test suite:2:if expressions:1:if false then 10 else 20 = 20, test suite:2:if expressions:0:if true then 10 else 20 = 10.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Still 1 tests running : test suite:2:if expressions:1:if false then 10 else 20 = 20.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 1 tests running: test suite:2:if expressions:1:if false then 10 else 20 = 20.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Test test suite:2:if expressions:1:if false then 10 else 20 = 20 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Still 1 tests running : test suite:2:if expressions:1:if false then 10 else 20 = 20.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 1 tests running: test suite:2:if expressions:1:if false then 10 else 20 = 20.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: End test test suite:2:if expressions:1:if false then 10 else 20 = 20.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Still 1 tests running : test suite:2:if expressions:1:if false then 10 else 20 = 20.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 1 tests running: test suite:2:if expressions:1:if false then 10 else 20 = 20.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: 0 tests running: .
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#02 has ended.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#01 has ended.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Used 2 worker during test execution.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Run 2 tests with shard joe-ThinkPad-T460#02.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Run 4 tests with shard joe-ThinkPad-T460#01.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Check health of shard joe-ThinkPad-T460#02, 4 times.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Check health of shard joe-ThinkPad-T460#01, 1 times.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: ==============
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Summary:
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Test test suite:2:if expressions:1:if false then 10 else 20 = 20 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Test test suite:2:if expressions:0:if true then 10 else 20 = 10 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Test test suite:1:plus expressions:1:10 + 20 + 1 = 31 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Test test suite:0:eval of values:1:bool is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Test test suite:1:plus expressions:0:10 + 20 = 30 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Test test suite:0:eval of values:0:int is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Ran: 6 tests in: 0.10 seconds.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Cases: 6.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Tried: 6.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Errors: 0.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Failures: 0.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Skip: 0.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Todo: 0.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#00 I: Timeout: 0.

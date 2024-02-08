@@ -1,0 +1,4 @@
+(lang dune 3.9)
+(name balanced_tree_from_inorder_list)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (balanced_tree_from_inorder_list)))

@@ -1,0 +1,109 @@
+# dune utop
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/joe/anki_practice/ocaml/jsonparser
+# Auto-detected concurrency: 4
+$ /home/joe/.opam/default/bin/ocamlc.opt -config > /tmp/dune_82df51_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/home/joe/.opam/default/bin"
+#  ; ocaml = Ok External "/home/joe/.opam/default/bin/ocaml"
+#  ; ocamlc = External "/home/joe/.opam/default/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/home/joe/.opam/default/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/home/joe/.opam/default/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/home/joe/.opam/default/bin/ocamlmklib"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/home/joe/anki_practice/ocaml/jsonparser/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External "/home/joe/.opam/default/lib/ocaml"
+#      ; External "/home/joe/.opam/default/lib"
+#      ]
+#  ; ocaml_config =
+#      { version = "5.1.0"
+#      ; standard_library_default = "/home/joe/.opam/default/lib/ocaml"
+#      ; standard_library = "/home/joe/.opam/default/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X033"
+#      ; cmi_magic_number = "Caml1999I033"
+#      ; cmo_magic_number = "Caml1999O033"
+#      ; cma_magic_number = "Caml1999A033"
+#      ; cmx_magic_number = "Caml1999Y033"
+#      ; cmxa_magic_number = "Caml1999Z033"
+#      ; ast_impl_magic_number = "Caml1999M033"
+#      ; ast_intf_magic_number = "Caml1999N033"
+#      ; cmxs_magic_number = "Caml1999D033"
+#      ; cmt_magic_number = "Caml1999T033"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  ; instrument_with = []
+#  }
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamldep.opt -modules -impl lib/solution.ml) > _build/default/lib/.jsonparser.objs/jsonparser__Solution.impl.d
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.jsonparser.objs/byte -no-alias-deps -opaque -open Jsonparser -o lib/.jsonparser.objs/byte/jsonparser__Solution.cmo -c -impl lib/solution.ml)
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/jsonparser.cma lib/.jsonparser.objs/byte/jsonparser.cmo lib/.jsonparser.objs/byte/jsonparser__Solution.cmo)
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -bin-annot -I .utop/.utop.eobjs/byte -I /home/joe/.opam/default/lib/bytes -I /home/joe/.opam/default/lib/findlib -I /home/joe/.opam/default/lib/lambda-term -I /home/joe/.opam/default/lib/logs -I /home/joe/.opam/default/lib/lwt -I /home/joe/.opam/default/lib/lwt/unix -I /home/joe/.opam/default/lib/lwt_react -I /home/joe/.opam/default/lib/mew -I /home/joe/.opam/default/lib/mew_vi -I /home/joe/.opam/default/lib/ocaml/compiler-libs -I /home/joe/.opam/default/lib/ocaml/threads -I /home/joe/.opam/default/lib/ocaml/unix -I /home/joe/.opam/default/lib/ocplib-endian -I /home/joe/.opam/default/lib/ocplib-endian/bigstring -I /home/joe/.opam/default/lib/react -I /home/joe/.opam/default/lib/result -I /home/joe/.opam/default/lib/trie -I /home/joe/.opam/default/lib/uchar -I /home/joe/.opam/default/lib/utop -I /home/joe/.opam/default/lib/uucp -I /home/joe/.opam/default/lib/uuseg -I /home/joe/.opam/default/lib/uutf -I /home/joe/.opam/default/lib/xdg -I /home/joe/.opam/default/lib/zed -I lib/.jsonparser.objs/byte -no-alias-deps -o .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -c -impl .utop/utop.ml-gen)
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o .utop/utop.bc /home/joe/.opam/default/lib/ocaml/compiler-libs/ocamlcommon.cma /home/joe/.opam/default/lib/ocaml/compiler-libs/ocamlbytecomp.cma /home/joe/.opam/default/lib/ocaml/compiler-libs/ocamltoplevel.cma /home/joe/.opam/default/lib/findlib/findlib.cma /home/joe/.opam/default/lib/findlib/findlib_top.cma /home/joe/.opam/default/lib/logs/logs.cma /home/joe/.opam/default/lib/lwt/lwt.cma /home/joe/.opam/default/lib/logs/logs_lwt.cma /home/joe/.opam/default/lib/ocplib-endian/ocplib_endian.cma /home/joe/.opam/default/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /home/joe/.opam/default/lib/ocaml/unix/unix.cma /home/joe/.opam/default/lib/ocaml/threads/threads.cma /home/joe/.opam/default/lib/lwt/unix/lwt_unix.cma -I /home/joe/.opam/default/lib/lwt/../stublibs /home/joe/.opam/default/lib/react/react.cma /home/joe/.opam/default/lib/lwt_react/lwt_react.cma /home/joe/.opam/default/lib/result/result.cma /home/joe/.opam/default/lib/uutf/uutf.cma /home/joe/.opam/default/lib/uucp/uucp.cma /home/joe/.opam/default/lib/uuseg/uuseg.cma /home/joe/.opam/default/lib/zed/zed.cma /home/joe/.opam/default/lib/trie/trie.cma /home/joe/.opam/default/lib/mew/mew.cma /home/joe/.opam/default/lib/mew_vi/mew_vi.cma /home/joe/.opam/default/lib/lambda-term/lambda_term.cma -I /home/joe/.opam/default/lib/lambda-term/../stublibs /home/joe/.opam/default/lib/xdg/xdg.cma -I /home/joe/.opam/default/lib/xdg/../stublibs /home/joe/.opam/default/lib/utop/uTop.cma lib/jsonparser.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)

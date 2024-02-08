@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/balanced_tree_from_inorder_list/META"
+  "_build/install/default/lib/balanced_tree_from_inorder_list/dune-package"
+  "_build/install/default/lib/balanced_tree_from_inorder_list/opam"
+]
+bin: [
+  "_build/install/default/bin/balanced_tree_from_inorder_list"
+]

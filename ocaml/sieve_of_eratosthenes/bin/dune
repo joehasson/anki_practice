@@ -1,0 +1,4 @@
+(executable
+ (public_name sieve_of_eratosthenes)
+ (name main)
+ (libraries sieve_of_eratosthenes))

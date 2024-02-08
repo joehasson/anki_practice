@@ -1,0 +1,4 @@
+(executable
+ (public_name balanced_tree_from_inorder_list)
+ (name main)
+ (libraries balanced_tree_from_inorder_list))

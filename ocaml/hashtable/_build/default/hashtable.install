@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/hashtable/META"
+  "_build/install/default/lib/hashtable/dune-package"
+  "_build/install/default/lib/hashtable/opam"
+]
+bin: [
+  "_build/install/default/bin/hashtable"
+]

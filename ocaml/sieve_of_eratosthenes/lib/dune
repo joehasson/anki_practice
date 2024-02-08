@@ -1,0 +1,2 @@
+(library
+ (public_name sieve_of_eratosthenes))

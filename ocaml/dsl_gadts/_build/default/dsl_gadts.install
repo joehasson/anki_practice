@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/dsl_gadts/META"
+  "_build/install/default/lib/dsl_gadts/dune-package"
+  "_build/install/default/lib/dsl_gadts/opam"
+]
+bin: [
+  "_build/install/default/bin/dsl_gadts"
+]

@@ -1,0 +1,12 @@
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Start test test suite:0:eval of values:0:int.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Test test suite:0:eval of values:0:int is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: End test test suite:0:eval of values:0:int.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Start test test suite:1:plus expressions:0:10 + 20 = 30.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Test test suite:1:plus expressions:0:10 + 20 = 30 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: End test test suite:1:plus expressions:0:10 + 20 = 30.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Start test test suite:1:plus expressions:1:10 + 20 + 1 = 31.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Test test suite:1:plus expressions:1:10 + 20 + 1 = 31 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: End test test suite:1:plus expressions:1:10 + 20 + 1 = 31.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Start test test suite:2:if expressions:1:if false then 10 else 20 = 20.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: Test test suite:2:if expressions:1:if false then 10 else 20 = 20 is successful.
+2024-02-08T09:20:49+00:00 joe-ThinkPad-T460#01 I: End test test suite:2:if expressions:1:if false then 10 else 20 = 20.

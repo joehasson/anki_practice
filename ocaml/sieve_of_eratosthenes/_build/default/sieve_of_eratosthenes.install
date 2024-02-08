@@ -1,0 +1,18 @@
+lib: [
+  "_build/install/default/lib/sieve_of_eratosthenes/META"
+  "_build/install/default/lib/sieve_of_eratosthenes/dune-package"
+  "_build/install/default/lib/sieve_of_eratosthenes/opam"
+  "_build/install/default/lib/sieve_of_eratosthenes/sieve_of_eratosthenes.a"
+  "_build/install/default/lib/sieve_of_eratosthenes/sieve_of_eratosthenes.cma"
+  "_build/install/default/lib/sieve_of_eratosthenes/sieve_of_eratosthenes.cmi"
+  "_build/install/default/lib/sieve_of_eratosthenes/sieve_of_eratosthenes.cmt"
+  "_build/install/default/lib/sieve_of_eratosthenes/sieve_of_eratosthenes.cmx"
+  "_build/install/default/lib/sieve_of_eratosthenes/sieve_of_eratosthenes.cmxa"
+  "_build/install/default/lib/sieve_of_eratosthenes/sieve_of_eratosthenes.ml"
+]
+libexec: [
+  "_build/install/default/lib/sieve_of_eratosthenes/sieve_of_eratosthenes.cmxs"
+]
+bin: [
+  "_build/install/default/bin/sieve_of_eratosthenes"
+]

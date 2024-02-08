@@ -1,0 +1,5 @@
+# dune init project quickselect
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/joe/anki_practice/ocaml/quickselect
+# Auto-detected concurrency: 2

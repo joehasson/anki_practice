@@ -1,0 +1,36 @@
+(lang dune 3.7)
+(name sieve_of_eratosthenes)
+(sections (lib .) (libexec .) (bin ../../bin))
+(files
+ (lib
+  (META
+   dune-package
+   opam
+   sieve_of_eratosthenes.a
+   sieve_of_eratosthenes.cma
+   sieve_of_eratosthenes.cmi
+   sieve_of_eratosthenes.cmt
+   sieve_of_eratosthenes.cmx
+   sieve_of_eratosthenes.cmxa
+   sieve_of_eratosthenes.ml))
+ (libexec (sieve_of_eratosthenes.cmxs))
+ (bin (sieve_of_eratosthenes)))
+(library
+ (name sieve_of_eratosthenes)
+ (kind normal)
+ (archives
+  (byte sieve_of_eratosthenes.cma)
+  (native sieve_of_eratosthenes.cmxa))
+ (plugins
+  (byte sieve_of_eratosthenes.cma)
+  (native sieve_of_eratosthenes.cmxs))
+ (native_archives sieve_of_eratosthenes.a)
+ (main_module_name Sieve_of_eratosthenes)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name sieve_of_eratosthenes)
+   (visibility public)
+   (source
+    (path Sieve_of_eratosthenes)
+    (impl (path sieve_of_eratosthenes.ml))))))

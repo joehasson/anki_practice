@@ -1,0 +1,6 @@
+description = ""
+requires = ""
+archive(byte) = "sieve_of_eratosthenes.cma"
+archive(native) = "sieve_of_eratosthenes.cmxa"
+plugin(byte) = "sieve_of_eratosthenes.cma"
+plugin(native) = "sieve_of_eratosthenes.cmxs"
