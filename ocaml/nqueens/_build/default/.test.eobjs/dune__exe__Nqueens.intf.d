@@ -1,0 +1,1 @@
+nqueens.mli: Seq

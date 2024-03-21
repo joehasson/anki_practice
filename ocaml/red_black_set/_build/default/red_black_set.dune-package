@@ -1,0 +1,4 @@
+(lang dune 3.11)
+(name red_black_set)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (red_black_set)))

@@ -2,3 +2,6 @@
 
 (** @canonical Breadthf.Graph *)
 module Graph = Breadthf__Graph
+
+(** @canonical Breadthf.Soln *)
+module Soln = Breadthf__Soln

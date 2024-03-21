@@ -1,0 +1,5 @@
+# dune init lib tree_traversal
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/joe/anki_practice/ocaml
+# Auto-detected concurrency: 2

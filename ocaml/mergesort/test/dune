@@ -1,2 +1,3 @@
 (test
- (name mergesort))
+ (name test_mergesort)
+ (libraries mergesort ounit2))

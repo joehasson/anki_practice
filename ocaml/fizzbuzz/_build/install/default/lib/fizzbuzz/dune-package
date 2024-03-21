@@ -1,0 +1,4 @@
+(lang dune 3.9)
+(name fizzbuzz)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (fizzbuzz)))

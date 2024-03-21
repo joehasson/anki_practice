@@ -3,6 +3,7 @@ import random
 import pytest
 from enum import Enum
 
+import avl_sort
 import bottom_up_mergesort
 import heap_sort
 import heap_sort_builtins
@@ -16,6 +17,7 @@ class SortType(Enum):
     PURE = 1
 
 params = (
+    pytest.param(avl_sort.sort, SortType.PURE, id="AVL sort"),
     pytest.param(bottom_up_mergesort.sort, SortType.PURE, id="Bottom up mergesort"),
     pytest.param(heap_sort.sort, SortType.IN_PLACE, id="Heap sort"),
     pytest.param(heap_sort_builtins.sort, SortType.PURE, id="Heap sort builtins"),

@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/palindromes/META"
+  "_build/install/default/lib/palindromes/dune-package"
+  "_build/install/default/lib/palindromes/opam"
+]
+bin: [
+  "_build/install/default/bin/palindromes"
+]

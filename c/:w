@@ -1,0 +1,38 @@
+#include <aio.h>
+#include <stdlib.h>
+
+/* Custom allocator */
+typedef struct {
+    void *(*alloc)(size_t bytes);
+    void (*free)(void *ptr);
+    void *(*realloc)(void *ptr, size_t bytes);
+} Allocator;
+
+/* Dynamic array */
+typedef struct {
+    size_t length;
+    size_t capacity;
+    size_t padding;
+    Allocator *a;
+} Array_Header;
+
+/* Header utilities */
+#define array_header(a) (((Array_Header *) a) - 1)
+#define array_length(a) (array_header(a)->length)
+#define array_capacity(a) (array_header(a)->capacity)
+
+void *array_ensure_capacity(void *a, size_t item_size) {
+
+}
+
+/* Array ops */
+#define array_push(a, v) ( \
+        (a) = array_ensure_capacity(a, sizeof(v)), \
+        (a)[array_length(a)], \
+        &(a)[array_length(a)++])
+        
+
+/* tests */
+int main() {
+    Allocator my_allocator = {.alloc=malloc, .free=free, .realloc=realloc};
+}

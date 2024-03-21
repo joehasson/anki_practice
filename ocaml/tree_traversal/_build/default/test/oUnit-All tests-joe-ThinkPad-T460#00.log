@@ -1,0 +1,90 @@
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Runner: processes
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Chooser: simple
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration suite_name = "All tests"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration cache_filename = "/home/joe/anki_practice/ocaml/tree_traversal/_build/default/test/oUnit-$(suite_name).cache"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration run_gc_full_major = "true"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration display = "true"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration results_style_1_X = "false"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration testdata_dir = "none"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration health_check_interval = "1."
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration verbose = "false"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration chooser = "simple"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration output_html_dir = "none"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration processes_kill_period = "5."
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration runner = "processes"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration shards = "2"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration processes_grace_period = "5."
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration log_encoding = "utf-8"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration output_junit_file = "none"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration ci = "false"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Configuration output_file = "/home/joe/anki_practice/ocaml/tree_traversal/_build/default/test/oUnit-$(suite_name)-$(shard_id).log"
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Using 2 workers maximum.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Starting worker number joe-ThinkPad-T460#01.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#01 started.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Starting worker number joe-ThinkPad-T460#02.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#02 started.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:1:inorder, All tests:0:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#01 I: Start test All tests:0:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:1:inorder, All tests:0:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Start test All tests:1:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:1:inorder, All tests:0:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#01 I: Test All tests:0:preorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:1:inorder, All tests:0:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#01 I: End test All tests:0:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:1:inorder, All tests:0:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:2:postorder, All tests:1:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Test All tests:1:inorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#01 I: Start test All tests:2:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:2:postorder, All tests:1:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: End test All tests:1:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:2:postorder, All tests:1:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:3:preorder, All tests:2:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Start test All tests:3:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:3:preorder, All tests:2:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#01 I: Test All tests:2:postorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:3:preorder, All tests:2:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#01 I: End test All tests:2:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Test All tests:3:preorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:3:preorder, All tests:2:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: End test All tests:3:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:4:inorder, All tests:3:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#01 I: Start test All tests:4:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : All tests:5:postorder, All tests:4:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:5:postorder, All tests:4:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Start test All tests:5:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : All tests:5:postorder, All tests:4:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:5:postorder, All tests:4:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#01 I: Test All tests:4:inorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : All tests:5:postorder, All tests:4:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:5:postorder, All tests:4:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#01 I: End test All tests:4:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Test All tests:5:postorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : All tests:5:postorder, All tests:4:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 2 tests running: All tests:5:postorder, All tests:4:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: End test All tests:5:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Still 1 tests running : All tests:5:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 1 tests running: All tests:5:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: 0 tests running: .
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#01 has ended.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#02 has ended.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Used 2 worker during test execution.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Run 3 tests with shard joe-ThinkPad-T460#02.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Run 3 tests with shard joe-ThinkPad-T460#01.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Check health of shard joe-ThinkPad-T460#02, 1 times.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Check health of shard joe-ThinkPad-T460#01, 2 times.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: ==============
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Summary:
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Test All tests:5:postorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Test All tests:4:inorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Test All tests:3:preorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Test All tests:2:postorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Test All tests:1:inorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Test All tests:0:preorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Ran: 6 tests in: 0.11 seconds.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Cases: 6.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Tried: 6.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Errors: 0.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Failures: 0.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Skip: 0.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Todo: 0.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#00 I: Timeout: 0.

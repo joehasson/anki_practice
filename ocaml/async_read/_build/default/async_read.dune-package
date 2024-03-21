@@ -1,0 +1,31 @@
+(lang dune 3.9)
+(name async_read)
+(sections (lib .) (libexec .) (bin ../../bin))
+(files
+ (lib
+  (META
+   async_read.a
+   async_read.cma
+   async_read.cmi
+   async_read.cmt
+   async_read.cmx
+   async_read.cmxa
+   async_read.ml
+   dune-package
+   opam))
+ (libexec (async_read.cmxs))
+ (bin (async_read)))
+(library
+ (name async_read)
+ (kind normal)
+ (archives (byte async_read.cma) (native async_read.cmxa))
+ (plugins (byte async_read.cma) (native async_read.cmxs))
+ (native_archives async_read.a)
+ (requires lwt lwt.unix)
+ (main_module_name Async_read)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name async_read)
+   (visibility public)
+   (source (path Async_read) (impl (path async_read.ml))))))

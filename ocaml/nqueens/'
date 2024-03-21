@@ -1,0 +1,17 @@
+
+let nexts = fun x -> [x]
+let rec aux stack = match stack with
+    | [] -> Seq.empty
+    | x :: xs -> Seq.cons x (fun () -> aux (nexts x @ xs))
+    in aux [init]
+
+
+let dfs nexts init =
+    let rec aux stack = match stack with
+    | [] -> Seq.empty
+    | x :: xs -> Seq.cons x (fun () -> aux (nexts x @ xs))
+    in aux [init]
+
+let solve n =
+    failwith ""
+

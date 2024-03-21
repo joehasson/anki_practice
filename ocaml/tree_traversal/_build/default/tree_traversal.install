@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/tree_traversal/META"
+  "_build/install/default/lib/tree_traversal/dune-package"
+  "_build/install/default/lib/tree_traversal/opam"
+]
+bin: [
+  "_build/install/default/bin/tree_traversal"
+]

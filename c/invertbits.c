@@ -6,22 +6,16 @@ unsigned invert_bits(unsigned x, int p, int n);
 
 // Implementation
 unsigned invert_bits(unsigned x, int p, int n){
-    assert(p >= n-1);
-    assert(p < sizeof(unsigned) * 8);
-
-    unsigned ones_starting_p;
-
-    if (p+1 == sizeof(unsigned) * 8) 
-        ones_starting_p = ~0;
-    else
-        ones_starting_p = ~(~0 << p+1);
-
-    unsigned lower_zeros = (~0 << (p-n+1));
-    unsigned mask = ones_starting_p & lower_zeros;
-
-    return x ^ mask;
+	unsigned n_ones;
+	if (n == (sizeof(int) * 8)){
+		n_ones = ~0;	
+	}
+	else {
+		n_ones = ~(~0 << n);
+		n_ones <<= p - n + 1;
+	}
+	return x ^ n_ones;
 }
-
 
 // Test cases
 

@@ -1,1 +1,6 @@
-../../../../default/balanced_tree_from_preorder_list.dune-package
+(lang dune 3.7)
+(name balanced_tree_from_preorder_list)
+(sections (lib .) (bin ../../bin))
+(files
+ (lib (META dune-package opam))
+ (bin (balanced_tree_from_preorder_list)))

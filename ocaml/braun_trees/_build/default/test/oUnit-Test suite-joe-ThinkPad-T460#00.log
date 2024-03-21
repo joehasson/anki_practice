@@ -1,0 +1,101 @@
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Runner: processes
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Chooser: simple
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration suite_name = "Test suite"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration cache_filename = "/home/joe/anki_practice/ocaml/braun_trees/_build/default/test/oUnit-$(suite_name).cache"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration run_gc_full_major = "true"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration display = "true"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration results_style_1_X = "false"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration testdata_dir = "none"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration health_check_interval = "1."
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration verbose = "false"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration chooser = "simple"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration output_html_dir = "none"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration processes_kill_period = "5."
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration runner = "processes"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration shards = "2"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration processes_grace_period = "5."
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration log_encoding = "utf-8"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration output_junit_file = "none"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration ci = "false"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Configuration output_file = "/home/joe/anki_practice/ocaml/braun_trees/_build/default/test/oUnit-$(suite_name)-$(shard_id).log"
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Using 2 workers maximum.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Starting worker number joe-ThinkPad-T460#01.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#01 started.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Starting worker number joe-ThinkPad-T460#02.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#02 started.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:1:Sub, Test suite:0:to_list preserves order.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: Start test Test suite:0:to_list preserves order.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:1:Sub, Test suite:0:to_list preserves order.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Start test Test suite:1:Sub.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:1:Sub, Test suite:0:to_list preserves order.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: Test Test suite:0:to_list preserves order is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:1:Sub, Test suite:0:to_list preserves order.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: End test Test suite:0:to_list preserves order.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:1:Sub, Test suite:0:to_list preserves order.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:2:Update, Test suite:1:Sub.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: Start test Test suite:2:Update.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:2:Update, Test suite:1:Sub.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Test Test suite:1:Sub is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:2:Update, Test suite:1:Sub.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: End test Test suite:1:Sub.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: Test Test suite:2:Update is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:2:Update, Test suite:1:Sub.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: End test Test suite:2:Update.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:3:lorem has stuff, Test suite:2:Update.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:4:lorem has 1, Test suite:3:lorem has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Start test Test suite:3:lorem has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: Start test Test suite:4:lorem has 1.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:4:lorem has 1, Test suite:3:lorem has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: Test Test suite:4:lorem has 1 is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:4:lorem has 1, Test suite:3:lorem has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: End test Test suite:4:lorem has 1.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:4:lorem has 1, Test suite:3:lorem has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Test Test suite:3:lorem has stuff is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:5:loext has stuff, Test suite:3:lorem has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: End test Test suite:3:lorem has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: Start test Test suite:5:loext has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:5:loext has stuff, Test suite:3:lorem has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : Test suite:6:loext empty, Test suite:5:loext has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:6:loext empty, Test suite:5:loext has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Start test Test suite:6:loext empty.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : Test suite:6:loext empty, Test suite:5:loext has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:6:loext empty, Test suite:5:loext has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: Test Test suite:5:loext has stuff is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : Test suite:6:loext empty, Test suite:5:loext has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:6:loext empty, Test suite:5:loext has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#01 I: End test Test suite:5:loext has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Still 2 tests running : Test suite:6:loext empty, Test suite:5:loext has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 2 tests running: Test suite:6:loext empty, Test suite:5:loext has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Still 1 tests running : Test suite:6:loext empty.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 1 tests running: Test suite:6:loext empty.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Test Test suite:6:loext empty is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Still 1 tests running : Test suite:6:loext empty.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 1 tests running: Test suite:6:loext empty.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: End test Test suite:6:loext empty.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Still 1 tests running : Test suite:6:loext empty.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 1 tests running: Test suite:6:loext empty.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: 0 tests running: .
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#01 has ended.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Worker joe-ThinkPad-T460#02 has ended.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Used 2 worker during test execution.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Run 3 tests with shard joe-ThinkPad-T460#02.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Run 4 tests with shard joe-ThinkPad-T460#01.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Check health of shard joe-ThinkPad-T460#02, 1 times.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Check health of shard joe-ThinkPad-T460#01, 4 times.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: ==============
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Summary:
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Test Test suite:6:loext empty is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Test Test suite:5:loext has stuff is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Test Test suite:3:lorem has stuff is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Test Test suite:4:lorem has 1 is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Test Test suite:2:Update is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Test Test suite:1:Sub is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Test Test suite:0:to_list preserves order is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Ran: 7 tests in: 0.10 seconds.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Cases: 7.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Tried: 7.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Errors: 0.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Failures: 0.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Skip: 0.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Todo: 0.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#00 I: Timeout: 0.

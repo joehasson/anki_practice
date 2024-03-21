@@ -1,3 +1,5 @@
+(* These tests need to be fixed : They assume a single unique breadth first
+   search order where there are multiple possible correct BFSes *)
 open Breadthf
 open OUnit2
 
@@ -13,6 +15,7 @@ let sort_strings = List.sort String.compare
 let tests = "tests" >::: [
     "ML For the Working Programmer example" >:: (fun _ ->
         assert_equal 
+            (* This is too demanding: there are multiple correct bfs orders on this graph *)
             ["a"; "b"; "c"; "d"; "e"; "f"; "g"]
             (Graph.breadthf example "a")
             ~printer: string_of_string_list
@@ -26,7 +29,12 @@ let tests = "tests" >::: [
                 else if i = 2 then ["e"; "f"]
                 else if i = 3 then ["g"]
                 else []
-            in assert_equal expected (sort_strings set)) sets
+            in 
+            assert_equal 
+                expected 
+                (sort_strings set) 
+                ~printer: string_of_string_list
+            ) sets
     )
 ]
 

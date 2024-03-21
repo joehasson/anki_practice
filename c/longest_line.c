@@ -1,48 +1,36 @@
 #include <stdio.h>
 
-#define MAX 1000
+#define MAXLINE 1000
 
-void copy(char from[], char to[]);
-int my_getline(char copy_into[]);
-
-int main() {
-    char current_line[MAX];
-    char longest_line[MAX];
-    int longest_len = 0;
-    int i = 0;
-
-    while (i = my_getline(current_line))
-        if (i > longest_len){
-            copy(current_line, longest_line);
-            longest_len = i;
-    }
-
-    printf("The longest line was %s\n", longest_line);
-    printf("It had %d letters\n", longest_len);
+/* Read a line from stdin and return its length */
+int nextline(char buffer[]){
+	char c;
+	int i = 0;
+	while (i < MAXLINE && (c = getchar()) != EOF && c != '\n')
+		buffer[i++] = c;
+	buffer[i] = '\0';
+	return i;
 }
 
-int my_getline(char copy_into[]) {
-    int c, i = 0;
-
-    while (i < MAX && (c = getchar()) != EOF && c != '\n')
-        copy_into[i++] = c;
-
-    if (c == '\n')
-        copy_into[i++] = c;
-    
-    copy_into[i] = '\0';
-    return i;
+/* Copies contents of from into to, assumes room */
+void copy_into(char *from, char *to){
+	int i = 0;
+	do
+		to[i] = from[i];
+	while (from[i++]);
 }
 
+int main () {
+	char current[MAXLINE], longest[MAXLINE];
+	int len = 0, longest_len = 0;
 
-void copy(char from[], char to[]){
-    int i;
-    for (i = 0; from[i] != '\0'; i++)
-        to[i] = from[i];
+	while ((len = nextline(current)))
+		if (len > longest_len){
+			copy_into(current, longest);
+			longest_len = len;
+		}
+	printf("The longest line was %d long: %s\n", longest_len, longest);
 
-    to[i] = '\0';
-
-    return ;
+	return 0;
 }
-
 

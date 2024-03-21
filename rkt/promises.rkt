@@ -8,15 +8,22 @@
       x
       (waste (- x 1))))
   (begin
-    (waste 100000000)
+    (waste 1000000000)
     (+ x y)))
 
 
 ;TODO
 (define (my-delay thunk)
+  (mcons #f thunk))
 
 ;TODO
 (define (my-force del)
+    (if (mcar del)
+      (mcdr del)
+      (begin
+        (set-mcar! del #t)
+        (set-mcdr! del ((mcdr del)))
+        (mcdr del))))
 
 
 ;Test promise

@@ -1,10 +1,9 @@
 def sort(A: list[int]) -> None:
-    # Loop invariant: A[:i] is sorted
-    # Loop invariant x in A[:i] < y in A[i:]
+    # Invariant: A[:i] is sorted and all less than subsequent
     for i in range(len(A) - 1):
-        least = i
-        for j in range(i+1, len(A)):
-            if A[j] < A[least]:
-                least = j
-        A[i], A[least] = A[least], A[i]
+        index_of_least = i
+        for j in range(i, len(A)):
+            if A[j] < A[index_of_least]:
+                index_of_least = j
+        A[i], A[index_of_least] = A[index_of_least], A[i]
 

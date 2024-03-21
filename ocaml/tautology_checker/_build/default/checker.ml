@@ -36,6 +36,9 @@ let rec conjuncts = function
     | Conj (p,q) -> conjuncts p @ conjuncts q
     | p -> [p]
 
+(** [split_atoms p] is a pair of lists containing the positive
+    (resp. negative) atoms in p, where p is a disjunction of
+    literals *)
 let rec split_atoms = function
     | Conj _ -> failwith "Expected a conjunct"
     | Disj (p, q) -> 

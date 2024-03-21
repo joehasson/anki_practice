@@ -1,59 +1,34 @@
-type 'a seqnode = Cons of 'a * 'a seq | Nil
-and 'a seq = unit -> 'a seqnode
+(*
+Imagine the set of all possible strings over this alphabet as a trie
+                      ""
+                /      |    \
+             A         B      C
+         /   |  \     ...    ...
+        AA  AB   AC
+       /|\  /|\  /|\
+        ...  ... ...
+This trie can be computed lazily: suppose we have a function parent -> child[].
+To enumerate all strings we can perform a lazy bfs over this trie. Then just
+filter for the palindromes.
+*)
+type alphabet = char list
+type word = char list
 
-exception Empty
+let children (alphabet: alphabet) (parent: word) : word list =
+    List.map (fun ch -> ch :: parent) alphabet
 
-let alphabet = ['a';'b';'c']
-
-let hd sq = match sq () with
-    | Cons (x,_) -> x
-    | Nil -> raise Empty
-
-let tl sq = match sq () with
-    | Cons (_,sq') -> sq'
-    | Nil -> raise Empty
-
-let rec seq_filter f sq = match sq () with
-    | Cons (x,sq') -> 
-            if f x 
-            then fun () -> Cons (x, seq_filter f sq')
-            else seq_filter f sq'
-    | Nil -> sq
-
-let rec seq_map f sq = match sq () with
-    | Cons (x,sq') -> fun () -> Cons (f x, seq_map f sq')
-    | Nil -> fun () -> Nil
-
-let rec seq_take sq n = match sq(), n with
-    | _, 0 -> []
-    | Nil, _ -> raise Empty
-    | Cons(x,sq'), n -> x :: seq_take sq' (n-1)
-
-let children_of parent = 
-    List.map (fun c -> c :: parent) alphabet
-
-let is_palindrome s =
-    s = List.rev s
-
-let seq_bfs f init =
+let bfs (child_fn: word -> word list) (root: word) : word Seq.t = 
     let q = Queue.create () in
-    let enqueue x = Queue.add x q in
-    let () = enqueue init in
-    let rec seq = fun () ->
-        let x = Queue.pop q in
-        let () = List.iter enqueue (f x) in
-        Cons (x, seq)
-    in seq
+    let () = Queue.add root q in
+    let rec aux () =
+        let next = Queue.take q in
+        Queue.add_seq q (child_fn next |> List.to_seq);
+        Seq.Cons (next, aux)
+    in aux
 
-let palindromes = 
-    seq_filter is_palindrome (seq_bfs children_of [])
+let is_palindrome word = 
+    List.rev word = word
 
-let () = 
-    let string_of_chars chars = 
-        let buf = Buffer.create (List.length chars) in
-        let () = List.iter (Buffer.add_char buf) chars in
-        Buffer.contents buf
-    in
-    let palstrings = seq_map string_of_chars palindromes in
-    List.iter print_endline (seq_take palstrings 100 )
+let palindromes (alphabet: alphabet) : word Seq.t =
+    Seq.filter is_palindrome (bfs (children alphabet) [])
 

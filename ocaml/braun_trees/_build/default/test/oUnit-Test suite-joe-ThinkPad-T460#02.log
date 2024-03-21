@@ -1,0 +1,9 @@
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Start test Test suite:1:Sub.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Test Test suite:1:Sub is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: End test Test suite:1:Sub.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Start test Test suite:3:lorem has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Test Test suite:3:lorem has stuff is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: End test Test suite:3:lorem has stuff.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Start test Test suite:6:loext empty.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: Test Test suite:6:loext empty is successful.
+2024-01-28T19:24:37+00:00 joe-ThinkPad-T460#02 I: End test Test suite:6:loext empty.

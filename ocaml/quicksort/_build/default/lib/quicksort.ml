@@ -1,17 +1,18 @@
-let rec partition pivot = function
-    | [] -> [], []
-    | x :: xs ->
-            let (l,r) = partition pivot xs in
-            if x <= pivot
-            then x :: l, r
-            else l, x :: r
+let partition pivot xs = 
+    let rec aux xs left right = match xs with
+    | [] -> left, right
+    | x :: xs' ->
+        if x <= pivot 
+        then aux xs' (x :: left) right
+        else aux xs' left (x :: right)
+    in aux xs [] []
 
 let sort lst =
-    let rec quicksort lst sorted =
-        match lst with
+    let rec quicksort unsorted sorted =
+        match unsorted with
         | [] -> sorted
         | pivot :: xs ->
-            let l,r = partition pivot xs in
-            quicksort l (pivot :: quicksort r sorted)
+            let left, right = partition pivot xs in
+            quicksort left (pivot :: quicksort right sorted)
     in quicksort lst []
 

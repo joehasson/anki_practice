@@ -17,5 +17,43 @@ module type SEQUENCE = sig
     val from: int -> int seq
 end
 
-module Sequence : SEQUENCE = struct
+module Sequence : SEQUENCE  = struct
+    type 'a seqnode = Cons of 'a * 'a seq | Nil
+    and 'a seq = unit -> 'a seqnode
+
+    exception Empty
+
+    let cons x seq = fun () -> Cons (x, seq)
+
+    let null = fun () -> Nil
+
+    let hd seq = match seq () with
+    | Nil -> raise Empty
+    | Cons (x, _) -> x
+
+    let tl seq = match seq () with
+    | Nil -> raise Empty
+    | Cons (_, seq') -> seq'
+
+    let rec fromList = function
+    | [] -> null
+    | x :: xs -> cons x (fromList xs)
+
+    let rec toList sq = match sq() with
+    | Nil -> []
+    | Cons (x, sq') -> x :: toList sq'
+
+    let rec take sq n =
+        if n=0
+        then []
+        else match sq () with
+        | Nil -> raise Empty
+        | Cons (x, sq') -> x :: take sq' (n-1)
+
+    let rec drop sq n =
+        if n=0
+        then sq
+        else match sq () with
+        | Nil -> raise Empty
+        | Cons (_, sq') -> drop sq' (n-1)
 end

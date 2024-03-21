@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 int s_to_n(char s[]) {
-    int sum = 0, i;
-
-    for (i = 0; s[i] != '\0'; ++i)
-        sum = sum * 10 + (s[i] - '0');
-
-    return sum;
+	int i = 0;
+	while (*s)
+		i = (i * 10) + (*s++ - '0');
+	return i;
 }
 
 int main () {

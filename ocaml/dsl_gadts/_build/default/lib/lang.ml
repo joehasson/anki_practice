@@ -1,15 +1,15 @@
 type _ value =
-    | Int: int -> int value
-    | Bool: bool -> bool value
+| Int: int -> int value
+| Bool: bool -> bool value
 
 type _ expr =
-    | Value: 'a value -> 'a expr
-    | Plus: int expr * int expr -> int expr
-    | Eq: int expr * int expr -> bool expr
-    | If: bool expr * 'a expr * 'a expr -> 'a expr
+| Value: 'a value -> 'a expr
+| If: bool expr * 'a expr * 'a expr -> 'a expr
+| Eq: 'a expr * 'a expr -> bool expr
+| Plus: int expr * int expr -> int expr
 
-let rec eval:  type a. a expr -> a value = function
+let rec eval: type a. a expr -> a value = function
 | Value v -> v
-| Plus (n, m) -> let Int n, Int m = eval n, eval m in Int (n+m)
-| Eq (n, m) -> let Int n, Int m = eval n, eval m in Bool (n=m)
-| If (b, x, y) -> let Bool v = eval b in if v then eval x else eval y
+| If (be, e1, e2) -> let Bool b = eval be in if b then eval e1 else eval e2
+| Eq (e1, e2) -> Bool (eval e1 = eval e2)
+| Plus (e1, e2) -> let Int i, Int j = eval e1, eval e2 in Int (i+j)

@@ -1,0 +1,18 @@
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Start test All tests:0:Top-down mergesort tests:0:empty.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Test All tests:0:Top-down mergesort tests:0:empty is successful.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: End test All tests:0:Top-down mergesort tests:0:empty.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Start test All tests:0:Top-down mergesort tests:2:some nums1.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Test All tests:0:Top-down mergesort tests:2:some nums1 is successful.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: End test All tests:0:Top-down mergesort tests:2:some nums1.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Start test All tests:0:Top-down mergesort tests:3:some nums2.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Test All tests:0:Top-down mergesort tests:3:some nums2 is successful.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: End test All tests:0:Top-down mergesort tests:3:some nums2.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Start test All tests:1:Bottom-up mergesort tests:0:empty.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Test All tests:1:Bottom-up mergesort tests:0:empty is successful.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: End test All tests:1:Bottom-up mergesort tests:0:empty.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Start test All tests:1:Bottom-up mergesort tests:1:singleton.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Test All tests:1:Bottom-up mergesort tests:1:singleton is successful.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: End test All tests:1:Bottom-up mergesort tests:1:singleton.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Start test All tests:1:Bottom-up mergesort tests:3:some nums2.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: Test All tests:1:Bottom-up mergesort tests:3:some nums2 is successful.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#01 I: End test All tests:1:Bottom-up mergesort tests:3:some nums2.

@@ -1,9 +1,9 @@
-# dune build
+# dune utop
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/joe/anki_practice/ocaml/all_change
-# Auto-detected concurrency: 2
-$ /usr/bin/ocamlc.opt -config > /tmp/dune_8b3660_output
+# Auto-detected concurrency: 4
+$ /home/joe/.opam/default/bin/ocamlc.opt -config > /tmp/dune_6c17da_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -12,112 +12,64 @@ $ /usr/bin/ocamlc.opt -config > /tmp/dune_8b3660_output
 #  ; for_host = None
 #  ; fdo_target_exe = None
 #  ; build_dir = In_build_dir "default"
-#  ; toplevel_path = Some External "/home/joe/.opam/default/lib/toplevel"
-#  ; ocaml_bin = External "/usr/bin"
+#  ; ocaml_bin = External "/home/joe/.opam/default/bin"
 #  ; ocaml = Ok External "/home/joe/.opam/default/bin/ocaml"
-#  ; ocamlc = External "/usr/bin/ocamlc.opt"
-#  ; ocamlopt = Ok External "/usr/bin/ocamlopt.opt"
-#  ; ocamldep = Ok External "/usr/bin/ocamldep.opt"
-#  ; ocamlmklib = Ok External "/usr/bin/ocamlmklib.opt"
-#  ; env =
+#  ; ocamlc = External "/home/joe/.opam/default/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/home/joe/.opam/default/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/home/joe/.opam/default/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/home/joe/.opam/default/bin/ocamlmklib"
+#  ; installed_env =
 #      map
-#        { "DUNE_OCAML_HARDCODED" : "/home/joe/.opam/default/lib"
-#        ; "DUNE_OCAML_STDLIB" : "/usr/lib/ocaml"
-#        ; "DUNE_SOURCEROOT" : "/home/joe/anki_practice/ocaml/all_change"
-#        ; "INSIDE_DUNE" :
+#        { "INSIDE_DUNE" :
 #            "/home/joe/anki_practice/ocaml/all_change/_build/default"
-#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "/home/joe/anki_practice/ocaml/all_change/_build/install/default/lib"
-#        ; "OCAMLPATH" :
-#            "/home/joe/anki_practice/ocaml/all_change/_build/install/default/lib"
-#        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "/home/joe/anki_practice/ocaml/all_change/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
 #        }
-#  ; findlib_paths = [ External "/home/joe/.opam/default/lib" ]
-#  ; arch_sixtyfour = true
-#  ; natdynlink_supported = true
-#  ; supports_shared_libraries = true
+#  ; findlib_paths =
+#      [ External "/home/joe/.opam/default/lib/ocaml"
+#      ; External "/home/joe/.opam/default/lib"
+#      ]
 #  ; ocaml_config =
-#      { version = "4.13.1"
-#      ; standard_library_default = "/usr/lib/ocaml"
-#      ; standard_library = "/usr/lib/ocaml"
+#      { version = "5.1.0"
+#      ; standard_library_default = "/home/joe/.opam/default/lib/ocaml"
+#      ; standard_library = "/home/joe/.opam/default/lib/ocaml"
 #      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
 #      ; ccomp_type = "cc"
-#      ; c_compiler = "x86_64-linux-gnu-gcc"
+#      ; c_compiler = "gcc"
 #      ; ocamlc_cflags =
-#          [ "-O2"
-#          ; "-fno-strict-aliasing"
-#          ; "-fwrapv"
-#          ; "-pthread"
-#          ; "-fPIC"
-#          ; "-g"
-#          ; "-O2"
-#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
-#          ; "-fstack-protector-strong"
-#          ; "-Wformat"
-#          ; "-Werror=format-security"
-#          ]
-#      ; ocamlc_cppflags =
-#          [ "-D_FILE_OFFSET_BITS=64"; "-Wdate-time"; "-D_FORTIFY_SOURCE=2" ]
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
 #      ; ocamlopt_cflags =
-#          [ "-O2"
-#          ; "-fno-strict-aliasing"
-#          ; "-fwrapv"
-#          ; "-pthread"
-#          ; "-fPIC"
-#          ; "-g"
-#          ; "-O2"
-#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
-#          ; "-fstack-protector-strong"
-#          ; "-Wformat"
-#          ; "-Werror=format-security"
-#          ]
-#      ; ocamlopt_cppflags =
-#          [ "-D_FILE_OFFSET_BITS=64"; "-Wdate-time"; "-D_FORTIFY_SOURCE=2" ]
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
 #      ; bytecomp_c_compiler =
-#          [ "x86_64-linux-gnu-gcc"
+#          [ "gcc"
 #          ; "-O2"
 #          ; "-fno-strict-aliasing"
 #          ; "-fwrapv"
 #          ; "-pthread"
 #          ; "-fPIC"
-#          ; "-g"
-#          ; "-O2"
-#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
-#          ; "-fstack-protector-strong"
-#          ; "-Wformat"
-#          ; "-Werror=format-security"
 #          ; "-D_FILE_OFFSET_BITS=64"
-#          ; "-Wdate-time"
-#          ; "-D_FORTIFY_SOURCE=2"
 #          ]
 #      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
 #      ; native_c_compiler =
-#          [ "x86_64-linux-gnu-gcc"
+#          [ "gcc"
 #          ; "-O2"
 #          ; "-fno-strict-aliasing"
 #          ; "-fwrapv"
 #          ; "-pthread"
 #          ; "-fPIC"
-#          ; "-g"
-#          ; "-O2"
-#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
-#          ; "-fstack-protector-strong"
-#          ; "-Wformat"
-#          ; "-Werror=format-security"
 #          ; "-D_FILE_OFFSET_BITS=64"
-#          ; "-Wdate-time"
-#          ; "-D_FORTIFY_SOURCE=2"
 #          ]
-#      ; native_c_libraries = [ "-lm" ]
-#      ; native_pack_linker = [ "x86_64-linux-gnu-ld"; "-r"; "-o" ]
+#      ; native_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
 #      ; cc_profile = []
 #      ; architecture = "amd64"
 #      ; model = "default"
 #      ; int_size = 63
 #      ; word_size = 64
 #      ; system = "linux"
-#      ; asm = [ "x86_64-linux-gnu-as" ]
+#      ; asm = [ "as" ]
 #      ; asm_cfi_supported = true
 #      ; with_frame_pointers = false
 #      ; ext_exe = ""
@@ -134,30 +86,19 @@ $ /usr/bin/ocamlc.opt -config > /tmp/dune_8b3660_output
 #      ; flambda = false
 #      ; spacetime = false
 #      ; safe_string = true
-#      ; exec_magic_number = "Caml1999X030"
-#      ; cmi_magic_number = "Caml1999I030"
-#      ; cmo_magic_number = "Caml1999O030"
-#      ; cma_magic_number = "Caml1999A030"
-#      ; cmx_magic_number = "Caml1999Y030"
-#      ; cmxa_magic_number = "Caml1999Z030"
-#      ; ast_impl_magic_number = "Caml1999M030"
-#      ; ast_intf_magic_number = "Caml1999N030"
-#      ; cmxs_magic_number = "Caml1999D030"
-#      ; cmt_magic_number = "Caml1999T030"
+#      ; exec_magic_number = "Caml1999X033"
+#      ; cmi_magic_number = "Caml1999I033"
+#      ; cmo_magic_number = "Caml1999O033"
+#      ; cma_magic_number = "Caml1999A033"
+#      ; cmx_magic_number = "Caml1999Y033"
+#      ; cmxa_magic_number = "Caml1999Z033"
+#      ; ast_impl_magic_number = "Caml1999M033"
+#      ; ast_intf_magic_number = "Caml1999N033"
+#      ; cmxs_magic_number = "Caml1999D033"
+#      ; cmt_magic_number = "Caml1999T033"
 #      ; natdynlink_supported = true
 #      ; supports_shared_libraries = true
 #      ; windows_unicode = false
 #      }
+#  ; instrument_with = []
 #  }
-# Promoting "_build/default/all_change.opam" to "all_change.opam"
-$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.all_change.eobjs/byte -no-alias-deps -opaque -o test/.all_change.eobjs/byte/dune__exe__All_change.cmi -c -intf test/all_change.mli)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.all_change.objs/byte -no-alias-deps -opaque -o lib/.all_change.objs/byte/all_change.cmo -c -impl lib/all_change.ml-gen)
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl lib/allchange.ml) > _build/default/lib/.all_change.objs/all_change__Allchange.impl.d
-> File "lib/allchange.ml", line 1, characters 14-17:
-> 1 | let allChange val coins =
->                   ^^^
-> Error: Syntax error
-[2]
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.all_change.eobjs/byte -I test/.all_change.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.all_change.eobjs/native/dune__exe__All_change.cmx -c -impl test/all_change.ml)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.all_change.objs/byte -I lib/.all_change.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.all_change.objs/native/all_change.cmx -c -impl lib/all_change.ml-gen)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/all_change.exe test/.all_change.eobjs/native/dune__exe__All_change.cmx)

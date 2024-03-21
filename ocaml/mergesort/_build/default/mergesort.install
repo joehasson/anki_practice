@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/mergesort/META"
+  "_build/install/default/lib/mergesort/dune-package"
+  "_build/install/default/lib/mergesort/opam"
+]
+bin: [
+  "_build/install/default/bin/mergesort"
+]

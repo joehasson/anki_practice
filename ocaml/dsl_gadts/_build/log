@@ -3,7 +3,7 @@
 # Shared cache: disabled
 # Workspace root: /home/joe/anki_practice/ocaml/dsl_gadts
 # Auto-detected concurrency: 4
-$ /home/joe/.opam/default/bin/ocamlc.opt -config > /tmp/dune_5166d8_output
+$ /home/joe/.opam/default/bin/ocamlc.opt -config > /tmp/dune_251ec0_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -22,6 +22,8 @@ $ /home/joe/.opam/default/bin/ocamlc.opt -config > /tmp/dune_5166d8_output
 #      map
 #        { "INSIDE_DUNE" :
 #            "/home/joe/anki_practice/ocaml/dsl_gadts/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
 #        }
 #  ; findlib_paths =
 #      [ External "/home/joe/.opam/default/lib/ocaml"
@@ -100,7 +102,12 @@ $ /home/joe/.opam/default/bin/ocamlc.opt -config > /tmp/dune_5166d8_output
 #      }
 #  ; instrument_with = []
 #  }
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamldep.opt -modules -impl lib/lang.ml) > _build/default/lib/.dsl_gadts.objs/dsl_gadts__Lang.impl.d
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.dsl_gadts.objs/byte -no-alias-deps -opaque -open Dsl_gadts -o lib/.dsl_gadts.objs/byte/dsl_gadts__Lang.cmo -c -impl lib/lang.ml)
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.test_dsl_gadts.eobjs/byte -I /home/joe/.opam/default/lib/ocaml/unix -I /home/joe/.opam/default/lib/ounit2 -I /home/joe/.opam/default/lib/ounit2/advanced -I /home/joe/.opam/default/lib/seq -I /home/joe/.opam/default/lib/stdlib-shims -I lib/.dsl_gadts.objs/byte -no-alias-deps -opaque -o test/.test_dsl_gadts.eobjs/byte/dune__exe__Test_dsl_gadts.cmi -c -intf test/test_dsl_gadts.mli)
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.dsl_gadts.objs/byte -I lib/.dsl_gadts.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dsl_gadts -o lib/.dsl_gadts.objs/native/dsl_gadts__Lang.cmx -c -impl lib/lang.ml)
 $ (cd _build/default && /home/joe/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_dsl_gadts.eobjs/byte -I test/.test_dsl_gadts.eobjs/native -I /home/joe/.opam/default/lib/ocaml/unix -I /home/joe/.opam/default/lib/ounit2 -I /home/joe/.opam/default/lib/ounit2/advanced -I /home/joe/.opam/default/lib/seq -I /home/joe/.opam/default/lib/stdlib-shims -I lib/.dsl_gadts.objs/byte -I lib/.dsl_gadts.objs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.test_dsl_gadts.eobjs/native/dune__exe__Test_dsl_gadts.cmx -c -impl test/test_dsl_gadts.ml)
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/dsl_gadts.cmxa lib/.dsl_gadts.objs/native/dsl_gadts.cmx lib/.dsl_gadts.objs/native/dsl_gadts__Soln.cmx lib/.dsl_gadts.objs/native/dsl_gadts__Lang.cmx)
 $ (cd _build/default && /home/joe/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_dsl_gadts.exe /home/joe/.opam/default/lib/ocaml/unix/unix.cmxa /home/joe/.opam/default/lib/stdlib-shims/stdlib_shims.cmxa /home/joe/.opam/default/lib/ounit2/advanced/oUnitAdvanced.cmxa /home/joe/.opam/default/lib/ounit2/oUnit.cmxa lib/dsl_gadts.cmxa test/.test_dsl_gadts.eobjs/native/dune__exe__Test_dsl_gadts.cmx)
 $ (cd _build/default/test && ./test_dsl_gadts.exe)
 > ......

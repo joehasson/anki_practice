@@ -1,0 +1,12 @@
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: Start test All tests:0:Top-down mergesort tests:1:singleton.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: Test All tests:0:Top-down mergesort tests:1:singleton is successful.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: End test All tests:0:Top-down mergesort tests:1:singleton.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: Start test All tests:0:Top-down mergesort tests:4:some nums3.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: Test All tests:0:Top-down mergesort tests:4:some nums3 is successful.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: End test All tests:0:Top-down mergesort tests:4:some nums3.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: Start test All tests:1:Bottom-up mergesort tests:2:some nums1.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: Test All tests:1:Bottom-up mergesort tests:2:some nums1 is successful.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: End test All tests:1:Bottom-up mergesort tests:2:some nums1.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: Start test All tests:1:Bottom-up mergesort tests:4:some nums3.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: Test All tests:1:Bottom-up mergesort tests:4:some nums3 is successful.
+2024-03-17T18:01:01+00:00 joe-ThinkPad-T460#02 I: End test All tests:1:Bottom-up mergesort tests:4:some nums3.

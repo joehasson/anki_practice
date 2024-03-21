@@ -1,23 +1,41 @@
-from typing import List
+def sort(A: list[int]) -> None:
+    quicksort(A, 0, len(A) - 1)
 
-def sort(arr: List[int]) -> None:
-    def sort(start: int, end: int) -> None:
-        print('sorting', arr[start:end])
-        pivot = arr[(start+end) // 2]
-        left_pointer, right_pointer = start, end
+def quicksort(A: list[int], p: int, r: int) -> None:
+    if p >= r:
+        return
 
-        while left_pointer < right_pointer:
-            while arr[left_pointer] < pivot:
-                left_pointer += 1
-            while arr[right_pointer] > pivot:
-                right_pointer -= 1
-            if left_pointer < right_pointer:
-                arr[left_pointer], arr[right_pointer] = arr[right_pointer], arr[left_pointer]
+    i = partition(A, p, r)
+    quicksort(A,p,i-1)
+    quicksort(A,i+1,r)
 
-        if start < right_pointer:
-            sort(start, right_pointer)
-        if left_pointer + 1 < end:
-            sort(left_pointer, end)
+def partition(A: list[int], p: int, r: int) -> int:
+    """
+    Split a list into the elements less than
+    the pivot and elements greater than the pivot.
+    return the index of the pivot.
+    """
+    pivot = A[r]
 
-    sort(0, len(arr)-1)
+    j = p 
+    # Maintain loop invariants
+    # A[p:j] <= pivot
+    # A[j:i] > pivot
+    # A[r] = pivot
+    for i in range(p,r):
+        if A[i] <= pivot:
+            A[j], A[i] = A[i], A[j]
+            j += 1
+
+    # On termination we have
+    # A[p:j] <= pivot
+    # A[j:r] > pivot
+    # A[r] = pivot
+
+    # Establish that
+    # A[p:j] <= pivot
+    # A[j+1:r+1] > pivot
+    # A[j] = pivot
+    A[j], A[r] = A[r], A[j]
+    return j
 

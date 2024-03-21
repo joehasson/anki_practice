@@ -3,3 +3,5 @@
 type graph
 val from_list: (string * string) list -> graph
 val breadthf: graph -> string -> string list
+val level_sets: graph -> string -> string list array
+val nexts: string -> graph -> string list

@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/braun_trees/META"
+  "_build/install/default/lib/braun_trees/dune-package"
+  "_build/install/default/lib/braun_trees/opam"
+]
+bin: [
+  "_build/install/default/bin/braun_trees"
+]

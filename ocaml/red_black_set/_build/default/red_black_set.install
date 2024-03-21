@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/red_black_set/META"
+  "_build/install/default/lib/red_black_set/dune-package"
+  "_build/install/default/lib/red_black_set/opam"
+]
+bin: [
+  "_build/install/default/bin/red_black_set"
+]

@@ -2,8 +2,8 @@
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/joe/anki_practice/ocaml/breadthf
-# Auto-detected concurrency: 2
-$ /home/joe/.opam/5.0.0/bin/ocamlc.opt -config > /tmp/dune_da426c_output
+# Auto-detected concurrency: 4
+$ /home/joe/.opam/default/bin/ocamlc.opt -config > /tmp/dune_b9c515_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -12,39 +12,27 @@ $ /home/joe/.opam/5.0.0/bin/ocamlc.opt -config > /tmp/dune_da426c_output
 #  ; for_host = None
 #  ; fdo_target_exe = None
 #  ; build_dir = In_build_dir "default"
-#  ; ocaml_bin = External "/home/joe/.opam/5.0.0/bin"
-#  ; ocaml = Ok External "/home/joe/.opam/5.0.0/bin/ocaml"
-#  ; ocamlc = External "/home/joe/.opam/5.0.0/bin/ocamlc.opt"
-#  ; ocamlopt = Ok External "/home/joe/.opam/5.0.0/bin/ocamlopt.opt"
-#  ; ocamldep = Ok External "/home/joe/.opam/5.0.0/bin/ocamldep.opt"
-#  ; ocamlmklib = Ok External "/home/joe/.opam/5.0.0/bin/ocamlmklib.opt"
-#  ; env =
+#  ; ocaml_bin = External "/home/joe/.opam/default/bin"
+#  ; ocaml = Ok External "/home/joe/.opam/default/bin/ocaml"
+#  ; ocamlc = External "/home/joe/.opam/default/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/home/joe/.opam/default/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/home/joe/.opam/default/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/home/joe/.opam/default/bin/ocamlmklib"
+#  ; installed_env =
 #      map
-#        { "DUNE_OCAML_HARDCODED" :
-#            "/home/joe/.opam/5.0.0/lib/ocaml:/home/joe/.opam/5.0.0/lib"
-#        ; "DUNE_OCAML_STDLIB" : "/home/joe/.opam/5.0.0/lib/ocaml"
-#        ; "DUNE_SOURCEROOT" : "/home/joe/anki_practice/ocaml/breadthf"
-#        ; "INSIDE_DUNE" :
+#        { "INSIDE_DUNE" :
 #            "/home/joe/anki_practice/ocaml/breadthf/_build/default"
-#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "/home/joe/anki_practice/ocaml/breadthf/_build/install/default/lib"
-#        ; "OCAMLPATH" :
-#            "/home/joe/anki_practice/ocaml/breadthf/_build/install/default/lib"
-#        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "/home/joe/anki_practice/ocaml/breadthf/_build/install/default/lib/toplevel"
 #        ; "OCAML_COLOR" : "always"
 #        ; "OPAMCOLOR" : "always"
 #        }
 #  ; findlib_paths =
-#      [ External "/home/joe/.opam/5.0.0/lib/ocaml"
-#      ; External "/home/joe/.opam/5.0.0/lib"
+#      [ External "/home/joe/.opam/default/lib/ocaml"
+#      ; External "/home/joe/.opam/default/lib"
 #      ]
-#  ; natdynlink_supported = true
-#  ; supports_shared_libraries = true
 #  ; ocaml_config =
-#      { version = "5.0.0"
-#      ; standard_library_default = "/home/joe/.opam/5.0.0/lib/ocaml"
-#      ; standard_library = "/home/joe/.opam/5.0.0/lib/ocaml"
+#      { version = "5.1.0"
+#      ; standard_library_default = "/home/joe/.opam/default/lib/ocaml"
+#      ; standard_library = "/home/joe/.opam/default/lib/ocaml"
 #      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
 #      ; ccomp_type = "cc"
 #      ; c_compiler = "gcc"
@@ -98,26 +86,27 @@ $ /home/joe/.opam/5.0.0/bin/ocamlc.opt -config > /tmp/dune_da426c_output
 #      ; flambda = false
 #      ; spacetime = false
 #      ; safe_string = true
-#      ; exec_magic_number = "Caml1999X032"
-#      ; cmi_magic_number = "Caml1999I032"
-#      ; cmo_magic_number = "Caml1999O032"
-#      ; cma_magic_number = "Caml1999A032"
-#      ; cmx_magic_number = "Caml1999Y032"
-#      ; cmxa_magic_number = "Caml1999Z032"
-#      ; ast_impl_magic_number = "Caml1999M032"
-#      ; ast_intf_magic_number = "Caml1999N032"
-#      ; cmxs_magic_number = "Caml1999D032"
-#      ; cmt_magic_number = "Caml1999T032"
+#      ; exec_magic_number = "Caml1999X033"
+#      ; cmi_magic_number = "Caml1999I033"
+#      ; cmo_magic_number = "Caml1999O033"
+#      ; cma_magic_number = "Caml1999A033"
+#      ; cmx_magic_number = "Caml1999Y033"
+#      ; cmxa_magic_number = "Caml1999Z033"
+#      ; ast_impl_magic_number = "Caml1999M033"
+#      ; ast_intf_magic_number = "Caml1999N033"
+#      ; cmxs_magic_number = "Caml1999D033"
+#      ; cmt_magic_number = "Caml1999T033"
 #      ; natdynlink_supported = true
 #      ; supports_shared_libraries = true
 #      ; windows_unicode = false
 #      }
+#  ; instrument_with = []
 #  }
-$ (cd _build/default && /home/joe/.opam/5.0.0/bin/ocamldep.opt -modules -impl lib/graph.ml) > _build/default/lib/.breadthf.objs/breadthf__Graph.impl.d
-$ (cd _build/default && /home/joe/.opam/5.0.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.breadthf.objs/byte -I lib/.breadthf.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Breadthf -o lib/.breadthf.objs/native/breadthf__Graph.cmx -c -impl lib/graph.ml)
-$ (cd _build/default && /home/joe/.opam/5.0.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/breadthf.cmxa lib/.breadthf.objs/native/breadthf.cmx lib/.breadthf.objs/native/breadthf__Graph.cmx)
-$ (cd _build/default && /home/joe/.opam/5.0.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_breadthf.exe lib/breadthf.cmxa /home/joe/.opam/5.0.0/lib/ocaml/unix/unix.cmxa /home/joe/.opam/5.0.0/lib/stdlib-shims/stdlib_shims.cmxa /home/joe/.opam/5.0.0/lib/ounit2/advanced/oUnitAdvanced.cmxa /home/joe/.opam/5.0.0/lib/ounit2/oUnit.cmxa test/.test_breadthf.eobjs/native/dune__exe__Test_breadthf.cmx)
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamldep.opt -modules -impl lib/graph.ml) > _build/default/lib/.breadthf.objs/breadthf__Graph.impl.d
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.breadthf.objs/byte -I lib/.breadthf.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Breadthf -o lib/.breadthf.objs/native/breadthf__Graph.cmx -c -impl lib/graph.ml)
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/breadthf.cmxa lib/.breadthf.objs/native/breadthf.cmx lib/.breadthf.objs/native/breadthf__Soln.cmx lib/.breadthf.objs/native/breadthf__Graph.cmx)
+$ (cd _build/default && /home/joe/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_breadthf.exe lib/breadthf.cmxa /home/joe/.opam/default/lib/ocaml/unix/unix.cmxa /home/joe/.opam/default/lib/stdlib-shims/stdlib_shims.cmxa /home/joe/.opam/default/lib/ounit2/advanced/oUnitAdvanced.cmxa /home/joe/.opam/default/lib/ounit2/oUnit.cmxa test/.test_breadthf.eobjs/native/dune__exe__Test_breadthf.cmx)
 $ (cd _build/default/test && ./test_breadthf.exe)
-> .
-> Ran: 1 tests in: 0.10 seconds.
+> ..
+> Ran: 2 tests in: 0.10 seconds.
 > OK

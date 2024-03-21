@@ -32,9 +32,7 @@ class D(B, A):
         super().f()
 
 c = C()
-c.f()
 d = D()
-d.f()
 
 def test_my_super(capsys) -> None:
     c = C()

@@ -1,0 +1,9 @@
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Start test All tests:1:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Test All tests:1:inorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: End test All tests:1:inorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Start test All tests:3:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Test All tests:3:preorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: End test All tests:3:preorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Start test All tests:5:postorder.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: Test All tests:5:postorder is successful.
+2023-12-12T07:32:15+00:00 joe-ThinkPad-T460#02 I: End test All tests:5:postorder.

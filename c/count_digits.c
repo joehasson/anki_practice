@@ -1,18 +1,20 @@
 #include <stdio.h>
 
 int main () {
-    int c, i, digits[10];
+	int ch, counts[10], i;
 
-    for (i = 0; i < 10; i++)
-        digits[i] = 0;
+	printf("Enter some digits\n");
 
-    while ((c = getchar()) != EOF)
-        if ('0' <= c && c <= '9')
-            digits[c - '0']++;
+	for (i = 0; i < 10; i++)
+		*(counts+i) = 0;
 
-    for (i = 0; i < 10; i++)
-        printf("%d ", digits[i]);
-    printf("\n");
+	while ((ch = getchar()) != EOF)
+		if ('0' <= ch && ch <= '9')
+			*(counts + ch - '0') += 1;
 
-    return 0;
+	for (i = 0; i < 10; i++)
+		printf("Digit %c counted %d times\n", '0' + i, *(counts+i));
+
+	return 0;
 }
+

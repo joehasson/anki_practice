@@ -3,14 +3,14 @@
 typedef unsigned char byte;
 
 void show_bytes (byte *v, size_t s) {
-    int i = 0;
-    while (i < s)
-        printf("%.2x ", v[i++]);
-    printf("\n");
+	int i;
+	for (i = 0; i < s; i++)
+		printf("%2X", v[i]);
+	printf("\n");
 }
 
 void show_int(int i) {
-    show_bytes((byte *) &i, sizeof(int));
+	show_bytes((byte *) &i, sizeof(int));
 }
 
 long exponentiate (int b, int p) {

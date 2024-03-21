@@ -1,4 +1,4 @@
-(lang dune 3.7)
+(lang dune 3.11)
 (name all_change)
 (sections (lib .) (bin ../../bin))
 (files (lib (META dune-package opam)) (bin (all_change)))
