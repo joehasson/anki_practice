@@ -115,7 +115,11 @@ void *array_ensure_capacity(void *array, size_t item_size) {
     Array_Header *h = array_header(array);
     if (h->capacity < h->length + 1) {
         size_t new_capacity = h->capacity * 2;
-        h = h->a->realloc(h->a->context, h, h->capacity, new_capacity);
+        h = h->a->realloc(
+                h->a->context,
+                h,
+                h->capacity * item_size + sizeof(*h),
+                new_capacity * item_size + sizeof(*h));
         if (h) {
             h->capacity = new_capacity;
         }
